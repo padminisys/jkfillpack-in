@@ -1,4 +1,4 @@
-Home
+Home - if user click on logo - home 
 About Us
 Products
 Factory
