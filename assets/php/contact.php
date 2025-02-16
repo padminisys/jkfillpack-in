@@ -9,7 +9,7 @@ $recipientName='your Name';
 $senderName = $_POST['contact-name'];
 $senderPhone = $_POST['contact-phone'];
 $senderMessage= $_POST['contact-message'];
-$senderSubject = 'New Message From ' . $senderName;
+$senderSubject = 'New Leads from ' . $senderName;
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
