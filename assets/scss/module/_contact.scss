@@ -1,0 +1,165 @@
+/*----------------------------
+    Contact
+----------------------------*/
+.google-map+.contct {
+    margin-top: -120px;
+}
+
+.contact__panel {
+    background-color: #fff;
+    padding: 80px 80px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 63px 0px rgba(40, 40, 40, 0.11);
+    display: flex;
+    flex-wrap: wrap;
+
+    .contact__panel-banner {
+        flex: 0 0 42%;
+        max-width: 42%;
+        position: relative;
+        padding-bottom: 40px;
+
+        img {
+            border-radius: 4px;
+        }
+
+        .cta__banner {
+            max-width: 360px;
+            border-radius: 0 4px 4px 4px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            .cta__desc {
+                font-size: 16px;
+            }
+        }
+
+        .contact__number {
+            color: $color-white;
+
+            i {
+                font-size: 25px;
+                margin-right: 13px;
+            }
+
+            a {
+                font-family: $font-heading;
+                color: $color-white;
+                font-size: 50px;
+                font-weight: 300;
+                line-height: 1;
+            }
+        }
+    }
+
+    .contact__form-panel {
+        flex: 0 0 58%;
+        max-width: 58%;
+        padding-left: 80px;
+    }
+
+    .contact__form-panel-header {
+        margin-bottom: 20px;
+
+        h4 {
+            font-size: 34px;
+            margin-bottom: 13px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .nice-select .list {
+        width: 100%;
+    }
+}
+
+.contact__panel-layout2 {
+    display: block;
+    padding: 80px;
+
+    .contact__form-panel {
+        max-width: 100%;
+        padding-left: 0;
+    }
+}
+
+.contact-info-box {
+    .contact__info-box-title {
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: 17px;
+    }
+
+    .contact__info-list li {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 9px;
+
+        a {
+            color: $color-body;
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .contact__panel {
+        padding: 20px;
+
+        .contact__form-panel {
+            padding-top: 20px;
+            padding-left: 0;
+        }
+
+        .contact__panel-banner,
+        .contact__form-panel {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+}
+
+/* Large Size Screens */
+@include lg-screens {
+    .contact__panel {
+        padding: 30px;
+
+        .contact__form-panel {
+            padding-left: 20px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .contact__panel .contact__form-panel-header h4 {
+        margin-bottom: 5px;
+    }
+
+    .contact__panel .contact__form-panel-header p {
+        margin-bottom: 10px;
+    }
+
+    .contact__panel .contact__panel-banner .cta__banner {
+        padding: 20px;
+
+        .cta__desc {
+            font-size: 12px;
+        }
+    }
+
+    .contact__panel .contact__panel-banner .contact__number {
+        i {
+            font-size: 15px;
+        }
+
+        a {
+            font-size: 30px;
+        }
+    }
+}

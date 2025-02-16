@@ -1,0 +1,89 @@
+/*-----------------------
+    Counters
+-----------------------*/
+.counter-item {
+    text-align: center;
+
+    h4 {
+        font-size: 43px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .counter__icon {
+        i {
+            font-size: 60px;
+        }
+
+        line-height: 1;
+        margin-bottom: 29px;
+    }
+
+    .counter__subtitle {
+        font-family: $font-heading;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        margin-bottom: 0;
+    }
+
+    .counter__desc {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+}
+
+.counters-white h4,
+.counters-white .counter__icon,
+.counters-white .counter__subtitle,
+.counters-white .counter__desc {
+    color: #fff;
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .counter-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* Extra Small Devices */
+@include xs-screens {
+    .counter-item .counter__icon {
+        margin-bottom: 15px;
+
+        i {
+            font-size: 45px;
+        }
+    }
+
+    .counter-item h4 {
+        font-size: 35px;
+    }
+
+    .counter-item .counter__subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Custom Media in Mobile Phones */
+@media only screen and (max-width: 450px) {
+    .counter-item .counter__icon {
+        margin-bottom: 15px;
+
+        i {
+            font-size: 30px;
+        }
+    }
+
+    .counter-item h4 {
+        font-size: 25px;
+    }
+
+    .counter-item .counter__subtitle {
+        font-size: 12px;
+    }
+}

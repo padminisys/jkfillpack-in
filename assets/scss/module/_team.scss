@@ -1,0 +1,122 @@
+/*--------------------
+     Team
+---------------------*/
+.member {
+    position: relative;
+    margin-bottom: 60px;
+
+    .member__img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+
+        img {
+            width: 100%;
+            @include prefix(transition, all .8s ease, webkit moz ms o);
+        }
+    }
+
+    &:hover .member__img img {
+        @include prefix(transform, scale(1.1), webkit moz ms o);
+    }
+
+    .member__info {
+        padding-top: 27px;
+
+        .member__name {
+            font-size: 26px;
+            line-height: 1;
+            margin-bottom: 7px;
+        }
+
+        .member__desc {
+            margin-bottom: 0;
+        }
+    }
+
+    .member__hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb($color-theme, 95%);
+        @include prefix(transition, all .5s linear, webkit moz ms o);
+    }
+
+    .member__content-inner {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        opacity: 0;
+        @include prefix(transition, all .5s linear, webkit moz ms o);
+    }
+
+    .social__icons li {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: $color-white;
+            opacity: 0;
+            @include prefix(transition, all .3s linear, webkit moz ms o);
+            @include prefix(transition-delay, .6s, webkit moz ms o);
+
+            &:hover {
+                color: $color-heading;
+            }
+        }
+    }
+
+    .social__icons li:nth-of-type(2) a {
+        @include prefix(transition-delay, .8s, webkit moz ms o);
+    }
+
+    .social__icons li:nth-of-type(3) a {
+        @include prefix(transition-delay, 1s, webkit moz ms o);
+    }
+
+    .social__icons li:nth-of-type(4) a {
+        @include prefix(transition-delay, 1.2s, webkit moz ms o);
+    }
+
+    &:hover {
+        .member__hover {
+            opacity: 1;
+        }
+
+        .member__content-inner {
+            bottom: 50px;
+            opacity: 1;
+        }
+
+        .social__icons li a {
+            opacity: 1;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .member {
+        max-width: 400px;
+        margin: 0 auto 30px;
+
+        .member__info {
+            padding-top: 15px;
+
+            .member__name {
+                font-size: 17px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

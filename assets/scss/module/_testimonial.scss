@@ -1,0 +1,204 @@
+/*----------------------------
+     Testimonial
+------------------------------*/
+.testimonial-item {
+    position: relative;
+
+    .testimonial__desc {
+        color: #333333;
+        font-size: 22px;
+        line-height: 39px;
+        font-weight: 700;
+        margin-bottom: 28px;
+    }
+}
+
+.testimonial__meta {
+    position: relative;
+    z-index: 2;
+
+    .testimonial__meta-title {
+        color: $color-heading;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .testimonial__meta-desc {
+        line-height: 25px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #616161;
+        margin-bottom: 0;
+        display: block;
+    }
+}
+
+.testimonial__thumb {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 14px;
+    display: inline-block;
+    padding: 2px;
+    border: 2px solid transparent;
+
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+}
+
+.testimonial-wrap-panel {
+    padding: 80px 60px;
+}
+
+.testimonials {
+
+    .carousel-arrows .owl-nav .owl-prev,
+    .carousel-arrows .owl-nav .owl-next {
+        top: 0;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #eaeaea;
+        @include prefix(transform, translateY(0), webkit moz ms o);
+
+        &:hover {
+            background-color: $color-theme;
+            border-color: $color-theme;
+            color: $color-white;
+        }
+    }
+
+    .carousel-arrows .owl-nav .owl-prev {
+        left: auto;
+        right: 0;
+
+        &:before {
+            content: "\e900";
+            font-size: 13px;
+        }
+    }
+
+    .carousel-arrows .owl-nav .owl-next {
+        right: 0;
+        top: 80px;
+
+        &:before {
+            content: "\e902";
+            font-size: 13px;
+        }
+    }
+
+    .owl-thumbs {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .owl-thumb-item {
+        display: flex;
+        align-items: center;
+        opacity: 0.5;
+        margin-right: 50px;
+        text-align: left;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    .owl-thumb-item.active {
+        opacity: 1;
+
+        .testimonial__thumb {
+            border-color: $color-theme;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .testimonials-layout1 .testimonial__desc {
+        padding-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .testimonials-layout1 .testimonial__desc {
+        padding-right: 50px;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .testimonial-item .testimonial__desc {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .testimonial-wrap-panel {
+        padding: 30px 20px;
+    }
+
+    .testimonial-wrap-panel .testimonial-item {
+        padding: 0;
+    }
+
+    .testimonial-item .testimonial__desc {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .testimonials .owl-thumb-item {
+        margin-right: 10px;
+    }
+}
+
+@include xs-screens {
+    .testimonials .owl-thumbs {
+        margin-top: 0;
+    }
+
+    .testimonial__thumb {
+        width: 40px;
+        height: 40px;
+        margin-right: 7px;
+    }
+
+    .testimonial__meta .testimonial__meta-title {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .testimonials .carousel-arrows .owl-nav .owl-prev,
+    .testimonials .carousel-arrows .owl-nav .owl-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonials .carousel-arrows .owl-nav .owl-next {
+        top: 60px;
+    }
+}
+
+/* Custom Media in Mobile Phones */
+@media only screen and (max-width: 380px) {
+    .testimonial__thumb {
+        width: 35px;
+        height: 35px;
+    }
+
+    .testimonial__meta .testimonial__meta-title,
+    .testimonial__meta .testimonial__meta-desc {
+        font-size: 11px;
+    }
+}

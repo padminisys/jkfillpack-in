@@ -1,0 +1,10 @@
+Barrel & IBC filling machine
+
+•	Weight based filling machine
+•	Filling range- 200Kg to 1500Kg 
+•	Filling accuracy: up to ±0.3% to ± 0.05%
+•	PLC based control system.
+•	Easy change over.
+•	Drip tray to arrest drop of oil.
+•	Speed: 26 Barrel/ Hour
+•	Number of filling head- 1

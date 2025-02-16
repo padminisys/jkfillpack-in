@@ -1,0 +1,10 @@
+LID PRESSING MACHINE
+
+•	Used for open mouth buckets of 6 Lit to 26 Lit.
+•	Lids used to place on open mouth of bucket manually.
+•	It consists of bottom two row slat chain and top drum roller.
+•	Speed of both slat chain and drum roller synchronized through variable AC drive.
+•	Height adjustment through handle to accommodate different heights of buckets.
+•	It can be used as conveyor by running only slat chain and top drum roller will be bypassed.
+•	Pneumatic cylinder option at top drum roller conveyor to adopt little variation in height of buckets and bucket will not stuck in lid pressing machine.
+•	Speed can be synchronized with respective to bucket filling machine.

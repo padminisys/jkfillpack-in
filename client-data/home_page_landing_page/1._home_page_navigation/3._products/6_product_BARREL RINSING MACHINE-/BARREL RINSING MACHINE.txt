@@ -1,0 +1,8 @@
+BARREL RINSING MACHINE
+
+•	Used to rinse empty barrel before filling application.
+•	Usually used at transformer oil filling machine.
+•	After manual centring of bung, barrel will be inverted upside down, rinsing nozzle spray oil inside the empty drum and oil washed out from drum through bung.
+•	After few seconds barrel will be inverted in vertical position where bung will be lifted to top side for filling cycle.
+•	Barrel will move automatically from infeed conveyor to rinsing station and from rinsing station to out-feed conveyor.
+•	Automatic bung centring option will be additional feature which can be incorporate as per requirement. 

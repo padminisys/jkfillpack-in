@@ -1,0 +1,72 @@
+/*-----------------------
+     fancybox 
+------------------------*/
+
+.fancybox-item {
+    position: relative;
+    margin-bottom: 40px;
+
+    .fancybox__icon {
+        font-size: 52px;
+        line-height: 1;
+        color: $color-theme;
+        margin-bottom: 22px;
+        @include prefix(transition, transform 0.3s ease, webkit moz ms o);
+    }
+
+    .fancybox__title {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 12px;
+        @include prefix(transition, all 0.3s ease, webkit moz ms o);
+    }
+
+    .fancybox__desc {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    &:hover .fancybox__icon {
+        @include animation("slideTopDown 1s infinite  alternate");
+    }
+
+    &:hover .fancybox__title {
+        color: $color-theme;
+    }
+}
+
+.fancybox-white {
+
+    .fancybox-item .fancybox__icon,
+    .fancybox-item .fancybox__title,
+    .fancybox-item:hover .fancybox__title {
+        color: $color-white;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .fancybox-item {
+        .fancybox__title {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .fancybox-item {
+        margin-bottom: 30px;
+    }
+
+    .fancybox-item .fancybox__icon {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .fancybox-item .fancybox__title {
+        font-size: 15px;
+        margin-bottom: 5px !important;
+    }
+}

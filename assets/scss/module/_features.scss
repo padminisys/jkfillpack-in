@@ -1,0 +1,207 @@
+/*-----------------------
+    Features
+------------------------*/
+.feature-numberd-item {
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+
+    .feature__numberd-item-icon {
+        font-size: 60px;
+        color: $color-theme;
+        line-height: 1;
+        margin-bottom: 23px;
+    }
+
+    &:hover .feature__numberd-item-icon {
+        @include animation("slideTopDown 1s infinite  alternate");
+    }
+
+    .feature__numberd-item-number {
+        font-size: 160px;
+        line-height: 1;
+        color: #f5f5f5;
+        margin-bottom: 0;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @include prefix(transform, translateX(-50%), webkit moz ms o);
+    }
+
+    .feature__numberd-item-title {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 15px;
+    }
+}
+
+.feature-item {
+    position: relative;
+    margin-bottom: 30px;
+
+    .feature__img {
+        margin-bottom: 24px;
+
+        img {
+            border-radius: 3px;
+            @include prefix(transition, transform .3s ease, webkit moz ms o);
+        }
+    }
+
+    .feature__subtitle {
+        font-family: $font-body;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+
+    .feature__title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 18px;
+        @include prefix(transition, color .3s ease, webkit moz ms o);
+    }
+
+    .feature__desc {
+        margin-bottom: 0;
+    }
+
+    .feature__link {
+        line-height: 1;
+        display: block;
+        margin-top: 5px;
+    }
+
+    &:hover {
+        .feature__img img {
+            @include prefix(transform, translateY(-4px), webkit moz ms o);
+        }
+
+        .feature__title {
+            color: $color-theme;
+        }
+    }
+}
+
+.features-layout2 {
+    .features-wrap {
+        box-shadow: 0px 3px 63px 0px rgba(40, 40, 40, 0.11);
+        border-radius: 5px;
+        position: relative;
+        z-index: 3;
+        background-color: $color-white;
+    }
+
+    .feature-item {
+        padding: 35px 25px;
+        margin-bottom: 0;
+        border-right: 2px solid #eaeaea;
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        .feature__title {
+            font-size: 24px;
+        }
+    }
+
+    .title-box {
+        margin-top: 45px;
+
+        i {
+            font-size: 55px;
+        }
+
+        h4 {
+            font-size: 28px;
+            font-weight: 400;
+        }
+    }
+}
+
+.feature-list-item {
+    padding: 27px 15px 22px 25px;
+    border: 2px solid #e5e5e5;
+    background-color: $color-white;
+    border-radius: 3px;
+    @include prefix(transition, all .6s linear, webkit moz ms o);
+
+    .feature__content {
+        position: relative;
+        padding-left: 32px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: 'Fontawesome';
+            content: "\f00c";
+            color: $color-theme;
+            font-size: 18px;
+        }
+    }
+
+    .feature__title {
+        font-size: 19px;
+        margin-bottom: 18px;
+    }
+
+    &:hover {
+        background-color: $color-theme;
+        border-color: $color-theme;
+        box-shadow: 0px 1px 73px 0px rgba(40, 40, 40, 0.15);
+
+        .feature__title,
+        .feature__desc,
+        .feature__content:before {
+            color: $color-white;
+            @include prefix(transition, all .3s linear, webkit moz ms o);
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .features-layout2 .features-wrap {
+        margin-top: -100px;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .feature-item {
+        .feature__img {
+            margin-bottom: 20px;
+        }
+
+        .feature__title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .feature-item {
+        .feature__img {
+            margin-bottom: 15px;
+        }
+
+        .feature__title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .features-layout2 .feature-item {
+        padding: 20px;
+        border-right: 0;
+        border-bottom: 2px solid #eaeaea;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

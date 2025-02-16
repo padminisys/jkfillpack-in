@@ -1,0 +1,38 @@
+/*----------------------
+     Dividers 
+------------------------*/
+.divider__line {
+	position: relative;
+	height: 2px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30px;
+		height: 2px;
+		background-color: #eaeaea;
+	}
+}
+
+.divider__line.divider__center:after {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.divider__line.divider__sm:after {
+	width: 30px;
+}
+
+.divider__line.divider__lg:after {
+	width: 70px;
+}
+
+.divider__theme:after {
+	background-color: $color-theme;
+}
+
+.divider__white:after {
+	background-color: $color-white;
+}

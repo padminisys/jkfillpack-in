@@ -1,0 +1,36 @@
+/*-------------------
+    lists
+-------------------*/
+.list-items li {
+    position: relative;
+    padding-left: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 9px;
+
+    &:before {
+        content: "\f00c";
+        font-family: 'Fontawesome';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        color: $color-white;
+        background-color: $color-heading;
+        font-size: 10px;
+        font-weight: 400;
+        width: 20px;
+        height: 20px;
+        line-height: 19px;
+        text-align: center;
+        border-radius: 50%;
+        @include prefix(transform, translateY(-50%), webkit moz ms o);
+    }
+}
+
+.list-items-layout2 li:before {
+    background-color: $color-theme;
+}
+
+.list-items-white li {
+    color: $color-white;
+}

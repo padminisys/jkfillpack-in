@@ -1,0 +1,287 @@
+/*----------------------
+    BUTTONS
+----------------------*/
+
+.btn {
+    text-transform: capitalize;
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    min-width: 170px;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 0 25px;
+    letter-spacing: .4px;
+    @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+}
+
+.btn:focus,
+.btn.active,
+.btn:active {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn__block {
+    width: 100%;
+}
+
+/* Button Primary */
+.btn__primary {
+    background-color: $color-theme;
+    border: 2px solid $color-theme;
+    color: $color-white;
+}
+
+.btn__primary:active,
+.btn__primary:focus,
+.btn__primary:hover {
+    background-color: $color-heading;
+    border-color: $color-heading;
+    color: $color-white;
+}
+
+.btn__primary.btn__hover2:active,
+.btn__primary.btn__hover2:focus,
+.btn__primary.btn__hover2:hover {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-theme;
+}
+
+.btn__primary.btn__hover3:active,
+.btn__primary.btn__hover3:focus,
+.btn__primary.btn__hover3:hover {
+    background-color: transparent;
+    border-color: $color-theme;
+    color: $color-theme;
+}
+
+/* Button Secondary*/
+.btn__secondary {
+    background-color: $color-dark;
+    border: 2px solid $color-dark;
+    color: $color-white;
+}
+
+.btn__secondary:active,
+.btn__secondary:focus,
+.btn__secondary:hover {
+    background-color: $color-theme;
+    border-color: $color-theme;
+    color: $color-white;
+}
+
+.btn__secondary.btn__hover2:active,
+.btn__secondary.btn__hover2:focus,
+.btn__secondary.btn__hover2:hover {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-dark;
+}
+
+.btn__default {
+    background-color: transparent;
+    border: 2px solid #eaeaea;
+}
+
+.btn__default:active,
+.btn__default:focus,
+.btn__default:hover {
+    background-color: $color-theme;
+    border-color: $color-theme;
+    color: $color-white;
+}
+
+/* Button White */
+.btn__white {
+    background-color: $color-white;
+    border: 2px solid $color-white;
+    color: $color-heading;
+}
+
+.btn__white:active,
+.btn__white:focus,
+.btn__white:hover {
+    background-color: $color-theme;
+    border-color: $color-theme;
+    color: $color-white;
+}
+
+.btn__white.btn__hover2:active,
+.btn__white.btn__hover2:focus,
+.btn__white.btn__hover2:hover {
+    background-color: $color-heading;
+    border-color: $color-heading;
+    color: $color-white;
+}
+
+.btn__rounded {
+    border-radius: 50px;
+}
+
+/* Button Link */
+.btn__link {
+    background-color: transparent;
+    border-color: transparent;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    border: none;
+    padding: 0;
+    min-width: 0;
+    border-radius: 0;
+}
+
+.btn__link.btn__primary {
+    color: $color-theme;
+}
+
+.btn__link.btn__primary:active,
+.btn__link.btn__primary:focus,
+.btn__link.btn__primary:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-dark;
+}
+
+.btn__link.btn__secondary {
+    color: $color-dark;
+}
+
+.btn__link.btn__secondary:active,
+.btn__link.btn__secondary:focus,
+.btn__link.btn__secondary:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-theme;
+}
+
+.btn__link.btn__white {
+    color: $color-white;
+}
+
+.btn__link.btn__white:active,
+.btn__link.btn__white:focus,
+.btn__link.btn__white:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-white;
+}
+
+/* Button Bordered */
+
+.btn__bordered {
+    background-color: transparent;
+}
+
+.btn__bordered.btn__primary {
+    border-color: $color-theme;
+    color: $color-theme;
+}
+
+.btn__bordered.btn__primary:active,
+.btn__bordered.btn__primary:focus,
+.btn__bordered.btn__primary:hover {
+    background-color: $color-theme;
+    border-color: $color-theme;
+    color: $color-white;
+}
+
+.btn__bordered.btn__secondary {
+    border-color: $color-dark;
+    color: $color-dark;
+}
+
+.btn__bordered.btn__secondary:active,
+.btn__bordered.btn__secondary:focus,
+.btn__bordered.btn__secondary:hover {
+    color: $color-white;
+    background-color: $color-dark;
+    border-color: $color-dark
+}
+
+.btn__bordered.btn__white {
+    color: $color-white;
+    border-color: $color-white
+}
+
+.btn__bordered.btn__white:active,
+.btn__bordered.btn__white:focus,
+.btn__bordered.btn__white:hover {
+    color: $color-theme;
+    background-color: $color-white;
+    border-color: $color-white
+}
+
+.btn__white.btn__secondary {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-dark;
+}
+
+.btn__white.btn__secondary:active,
+.btn__white.btn__secondary:focus,
+.btn__white.btn__secondary:hover {
+    background-color: $color-theme;
+    border-color: $color-theme;
+    color: $color-white;
+}
+
+
+.btn__video.popup-video {
+    padding-left: 40px;
+    color: $color-white;
+
+    .video__player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+.btn__lg {
+    min-width: 220px;
+}
+
+.btn__underlined {
+    padding-bottom: 5px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-theme;
+        @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+    }
+}
+
+.btn__white.btn__underlined:after {
+    background-color: $color-white;
+}
+
+.btn__white.btn__underlined:hover {
+    color: $color-heading;
+
+    &:after {
+        background-color: $color-heading;
+    }
+}
+
+.btn span~i {
+    margin-left: 8px;
+}
+
+.btn i~span {
+    margin-left: 8px;
+}

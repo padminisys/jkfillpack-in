@@ -1,0 +1,133 @@
+/*----------------------
+    Carousel
+-----------------------*/
+[data-nav="false"] .owl-nav,
+[data-dots="false"] .owl-dots {
+    display: none;
+}
+
+.owl-carousel {
+    .owl-item {
+        img {
+            width: 100%
+        }
+    }
+}
+
+.carousel-dots {
+    .owl-dots {
+        margin-top: 10px;
+        text-align: center;
+
+        .owl-dot {
+            margin: 0 5px;
+        }
+
+        .owl-dot span {
+            position: relative;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background-color: #b2b2b2;
+            border: 2px solid #b2b2b2;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .owl-dot.active span {
+            width: 14px;
+            height: 14px;
+            background-color: transparent;
+            border-color: $color-heading;
+            transform: translateY(3px);
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $color-heading;
+                transform: translate(-50%, -50%)
+            }
+        }
+    }
+}
+
+.carousel-dots-white .owl-dots .owl-dot span {
+    background-color: $color-white;
+    border-color: $color-white;
+}
+
+.carousel-dots-white .owl-dots .owl-dot.active span {
+    border-color: $color-white;
+}
+
+.carousel-dots-white .owl-dots .owl-dot.active span:before {
+    background-color: $color-white;
+}
+
+.carousel-arrows {
+    .owl-nav {
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            color: #333333;
+            font-size: 0;
+            font-weight: 400;
+            text-align: center;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+            border-radius: 0;
+            @include prefix(transform, translateY(-50%), webkit moz ms o);
+            @include prefix(transition, all 0.3s ease, webkit moz ms o);
+
+            &:hover {
+                color: $color-theme;
+                background-color: transparent;
+            }
+        }
+
+        .owl-prev {
+            left: 0;
+
+            &:before {
+                font-family: 'icomoon';
+                content: "\e901";
+                font-size: 55px;
+            }
+        }
+
+        .owl-next {
+            right: 0;
+
+            &:before {
+                font-family: 'icomoon';
+                content: "\e903";
+                font-size: 55px;
+            }
+        }
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        line-height: 1;
+    }
+}
+
+/* Extra Small Devices */
+@include xs-sm-screens {
+
+    .carousel-arrows .owl-nav .owl-prev:before,
+    .carousel-arrows .owl-nav .owl-next:before {
+        font-size: 40px;
+    }
+}

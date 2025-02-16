@@ -1,0 +1,68 @@
+/*----------------------
+    Accordions
+------------------------*/
+.accordion-item {
+    border: 1px solid #ededed;
+    background-color: $color-white;
+    border-radius: 3px;
+    padding: 25px 30px;
+    margin-bottom: 27px;
+
+    .accordion__item-title {
+        font-family: $font-heading;
+        color: $color-dark;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        padding-right: 25px;
+
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: "\f067";
+            font-family: fontawesome;
+            background-color: transparent;
+            color: $color-heading;
+            font-size: 10px;
+            font-weight: 400;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 3px;
+        }
+    }
+
+    &.opened {
+        border-color: $color-theme;
+
+        .accordion__item-title {
+            color: $color-theme;
+
+            &:after {
+                background-color: $color-theme;
+                color: $color-white;
+                content: "\f068";
+            }
+        }
+    }
+
+    .accordion__item-body {
+        padding-top: 25px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .accordion-item {
+        padding: 15px 20px;
+    }
+}

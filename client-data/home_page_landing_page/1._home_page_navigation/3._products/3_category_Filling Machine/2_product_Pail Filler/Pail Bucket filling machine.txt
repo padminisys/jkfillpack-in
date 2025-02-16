@@ -1,0 +1,12 @@
+Pail/ Bucket filling machine
+
+•	Weight based filling machine
+•	Filling range- 5Lit to 26 Lit 
+•	Filling accuracy: ±0.1% to ±0.25%
+•	No container, No fill
+•	Auto movement of bucket on filling area.
+•	PLC based control system.
+•	Easy change over.
+•	Drip tray to arrest drop of oil.
+•	Speed: 8 bucket/ min of 6 Lit 
+•	Number of filling head- 4.

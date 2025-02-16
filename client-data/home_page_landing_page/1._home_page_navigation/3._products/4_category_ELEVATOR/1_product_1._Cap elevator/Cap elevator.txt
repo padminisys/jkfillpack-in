@@ -1,0 +1,4 @@
+Cap elevator
+
+•	Hopper provided at base in which caps/ empty containers need to be dumped.
+•	Cleated belt will run synchronous to sensor to lift cap empty container up and act as dozer.

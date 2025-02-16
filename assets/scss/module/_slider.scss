@@ -1,0 +1,202 @@
+/*------------------------
+    Slider 
+--------------------------*/
+.header-transparent+.slider {
+    margin-top: -100px;
+}
+
+.header-transparent+.slider .slide-item {
+    padding-top: 100px;
+}
+
+.slider {
+    padding: 0;
+
+    .slide-item {
+        height: 100vh;
+    }
+
+    .slide__subtitle {
+        display: block;
+        font-family: $font-body;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 700;
+        color: $color-theme;
+        margin-bottom: 18px;
+    }
+
+    .slide__title {
+        font-size: 105px;
+        line-height: 95px;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+
+    .slide__desc {
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 700;
+        color: $color-white;
+        margin-bottom: 46px;
+        max-width: 650px;
+    }
+
+    .carousel-arrows .owl-nav .owl-prev {
+        left: 50px;
+    }
+
+    .carousel-arrows .owl-nav .owl-next {
+        right: 50px;
+    }
+
+    .carousel-arrows .owl-nav .owl-prev,
+    .carousel-arrows .owl-nav .owl-next {
+        color: $color-white;
+        border: none;
+        line-height: 46px;
+        width: auto;
+        opacity: 0;
+        transition: opacity .5s ease, transform .4s ease;
+        transform: scale(0.8);
+
+        &:hover {
+            color: $color-theme;
+        }
+    }
+
+    &:hover .carousel-arrows .owl-nav .owl-prev,
+    &:hover .carousel-arrows .owl-nav .owl-next {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel-arrows .owl-dots {
+        bottom: 30px;
+        text-align: center;
+    }
+
+    .carousel-dots .owl-dots .owl-dot span {
+        border-color: $color-white;
+    }
+
+    .carousel-dots .owl-dots .owl-dot.active span:before {
+        background-color: $color-white;
+    }
+}
+
+.slider-layout2 {
+    .slide__title {
+        font-size: 85px;
+    }
+}
+
+/* Large Size Screens */
+@include lg-screens {
+    .slider .slide__title {
+        font-size: 65px;
+        line-height: 75px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-next {
+        right: 10px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-prev {
+        left: 10px;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .slider .slide__title {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-next {
+        right: 0;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-prev {
+        left: 0;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+
+    .header-transparent+.slider {
+        margin-top: 0;
+    }
+
+    .header-transparent+.slider .slide-item {
+        padding-top: 0;
+    }
+
+    .slider .slide-item {
+        height: calc(100vh - 80px);
+    }
+
+    .header-transparent+.slider .slide__content {
+        padding-top: 0;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-prev,
+    .slider .carousel-arrows .owl-nav .owl-next {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-next:before,
+    .slider .carousel-arrows .owl-nav .owl-prev:before {
+        font-size: 15px;
+    }
+}
+
+/*  Small Screens and tablets  */
+@include sm-screens {
+    .slider .slide__title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-prev {
+        left: 10px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-next {
+        right: 10px;
+    }
+}
+
+/* Extra Small Devices */
+@include xs-screens {
+    .slider .slide__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .slider .slide__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .slider .slide__desc {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .slider .btn {
+        margin-bottom: 20px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-prev,
+    .slider .carousel-arrows .owl-nav .owl-next {
+        display: none;
+    }
+}

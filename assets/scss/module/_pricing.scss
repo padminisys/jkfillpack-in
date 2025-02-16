@@ -1,0 +1,146 @@
+/*--------------------------
+        pricing
+--------------------------*/
+.pricing-item {
+    position: relative;
+    background-color: $color-white;
+    padding: 50px 40px 60px;
+    box-shadow: 0px 3px 53px 0px rgba(40, 40, 40, 0.05);
+    @include prefix(transition, all .3s ease, webkit moz ms o);
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    &:hover {
+        @include prefix(transform, translateY(-4px), webkit moz ms o);
+    }
+
+    .pricing__header {
+        padding-bottom: 30px;
+        border-bottom: 2px solid #eaeaea;
+    }
+
+    .pricing__title {
+        font-size: 22px;
+        line-height: 1;
+        margin-bottom: 17px;
+    }
+
+    .pricing__desc {
+        margin-bottom: 40px;
+    }
+
+    .pricing__price {
+        font-family: $font-heading;
+        font-size: 50px;
+        color: $color-heading;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 16px;
+    }
+
+    .pricing__list {
+        padding-top: 50px;
+        margin-bottom: 30px;
+
+        li {
+            position: relative;
+            padding-left: 27px;
+            font-size: 14px;
+            line-height: 34px;
+            text-transform: capitalize;
+
+            &:after {
+                content: "\f00c";
+                font-family: FontAwesome;
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $color-theme;
+            }
+        }
+    }
+}
+
+.pricing-item-theme {
+    background-color: $color-theme;
+}
+
+.pricing-item-dark {
+    background-color: $color-dark;
+}
+
+.pricing-item-theme,
+.pricing-item-dark {
+
+    .pricing__title,
+    .pricing__desc,
+    .pricing__price,
+    .pricing__list li,
+    .pricing__list li::after {
+        color: $color-white;
+    }
+}
+
+/* Extra Large Size Screens */
+@media only screen and (min-width:1200px) {
+    .pricing .heading__title {
+        margin-left: -70px;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .pricing .container {
+        max-width: none;
+    }
+
+    .pricing-item {
+        padding: 30px;
+
+        .pricing__header {
+            padding-bottom: 20px;
+        }
+
+        .pricing__list {
+            padding-top: 20px;
+        }
+
+        .pricing__title {
+            margin-bottom: 15px;
+        }
+
+        .pricing__price {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+
+        .pricing__title,
+        .pricing__desc {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .pricing-item {
+        padding: 30px 20px;
+
+        .pricing__desc {
+            margin-bottom: 20px;
+        }
+
+        .pricing__list {
+            padding-top: 20px;
+        }
+
+        .pricing__price {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+
+        .pricing__header {
+            padding-bottom: 20px;
+        }
+    }
+}

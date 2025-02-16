@@ -1,0 +1,143 @@
+/*--------------------------
+    Project Name: Koira
+    Version: 1.0
+    Author: 7oorof
+    Relase Date: jan 2020
+---------------------------*/
+/*---------------------------
+      Table of Contents
+    -------------------------
+    
+    01- Global Styles
+    02- Helper Classes
+    03- Background & Colors
+    04- Typography
+    05- page title 
+    06- Buttons
+    07- Forms
+    08- Tabs
+    09- Icons
+    10- Breadcrumb
+    11- Pagination
+    12- Lists
+    13- Header & Navbar 
+    14- Accordions
+    15- Banners
+    16- Dividers
+    17- Footer
+    18- Call to Action
+    19- Carousel
+    20- Slider
+    21- Video
+    22- Features
+    23- Fancybox
+    24- portfolio
+    25- Team
+    26- Testimonials
+    27- Clients
+    28- Blog
+    29- Contact
+    30- Pricing
+    31- Counters
+    32- Sidebar
+    33- About
+    34- Banners
+    35- Careers
+
+----------------------------*/
+
+
+/*--------------------------
+      Global Styles
+---------------------------*/
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $color-white;
+    font-family: $font-body;
+    font-size: $body-font-size;
+    font-weight: 400;
+    color: $color-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background-color: $color-theme;
+    color: $color-white;
+}
+
+a {
+    color: $color-theme;
+    @include prefix(transition, color .3s ease, webkit moz ms o);
+
+    &:hover {
+        color: darken($color-theme, 20%);
+        text-decoration: none;
+    }
+}
+
+section {
+    position: relative;
+    padding: 100px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-------------------------
+     RESET Default Styles
+ --------------------------*/
+
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:active,
+:focus {
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+button,
+button:focus,
+.btn.focus,
+.btn:focus,
+.form-control,
+.form-control:focus {
+    outline: none;
+    background-color: transparent;
+    @include prefix(box-shadow, none, webkit moz ms o);
+}
+
+textarea {
+    resize: none
+}
+
+select {
+    background-color: transparent;
+}

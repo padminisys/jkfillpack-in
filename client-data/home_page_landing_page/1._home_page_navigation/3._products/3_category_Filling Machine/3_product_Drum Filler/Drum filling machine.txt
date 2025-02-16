@@ -1,0 +1,12 @@
+Drum filling machine
+
+•	Weigh based filling machine
+•	Filling range- 20Lit to 50 Lit 
+•	Filling accuracy: up to ±0.25%
+•	No container, No fill
+•	Auto movement of drummies on filling area.
+•	PLC based control system.
+•	Easy change over.
+•	Drip tray to arrest drop of oil.
+•	Speed: 4 bucket/ min of 20Lit 
+•	Number of filling head- 4.

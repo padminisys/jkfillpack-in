@@ -1,0 +1,59 @@
+/*-------------------------
+    Call to Action
+--------------------------*/
+.cta__banner {
+    background-color: $color-theme;
+    max-width: 400px;
+    padding: 50px 30px 40px 40px;
+
+    .cta__title {
+        color: $color-white;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .cta__desc {
+        color: $color-gray;
+        margin-bottom: 15px;
+    }
+
+    .btn:hover {
+        color: $color-heading;
+    }
+
+    .cta__icon {
+        line-height: 1;
+        margin-bottom: 20px;
+
+        i {
+            font-size: 60px;
+            line-height: 1;
+            color: $color-white;
+        }
+    }
+}
+
+.cta__banner-white {
+    background-color: $color-white;
+
+    .cta__title {
+        color: $color-heading;
+        margin-bottom: 15px;
+    }
+
+    .cta__desc {
+        color: $color-body;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .btn__link i {
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        background-color: $color-theme;
+        color: $color-white;
+        border-radius: 50%;
+        display: inline-block;
+    }
+}
