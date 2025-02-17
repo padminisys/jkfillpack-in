@@ -1,5 +1,6 @@
 Update to public domain website.
 
-Developers - Manohar 
+Developers List - 
 
+Manohar 
 Nikita Vyas
