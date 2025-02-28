@@ -1,30 +1,56 @@
-Update to public domain website.
+# Rules to Work as a Paid Open Source Contributor 🎉
 
-Developers List - 
+Welcome to **Padmini Systems**' open source contribution platform! Here, you can earn money by contributing to our projects through GitHub issues. This guide explains everything in a clear, concise, and easy-to-follow format.
 
-Manohar 
-Nikita Vyas
+---
 
+## How It Works 🚀
 
+- **Paid Tasks**  
+  We offer open source contribution tasks through GitHub issues. Each issue has a linked payment, and you can log up to **2 hours** of development effort per issue. Look for issues marked as **"ready"** to get started and earn money! 💰
 
-Rules to work as paid open source contributor ! 
+- **Task Allocation**  
+  While there might be many issues available, don’t feel overwhelmed. Simply reach out to us, and we’ll help you find the tasks that best suit your skills.
 
-At Padmini Systems We offer Paid open source contribution Task in terms of issues/task (Github issues)
+- **Clarity on Issues**  
+  Most issues are self-explanatory. However, if you have any questions, feel free to leave a comment or contact us directly. We’re here to support you! 🙋‍♂️🙋‍♀️
 
-Each issue have payment linked and 2 hours of developers efforts can be logged against. We will create issue with label - ready that means you can start on this and get paid.
+---
 
-There could be many issue but don't get overwheled with it, just contact us - we can always let you know what's up for you so you can just begin to work. 
+## Contribution Guidelines 📜
 
-Usually each issue is very much self explnatory but you can always reach out to us or leave comment so we can respond on it.
+### 1. Commitment of Words 🤝
+- **Honor Your Agreements:**  
+  If you have made a verbal agreement and received further instructions from our side, please stick to your commitment.  
+  *Example:* If you agreed on a call to implement a design by a certain deadline or to submit a PR by a specified time, we expect you to follow through.
 
-We want you to follow following rules of contribution - 
+### 2. Timely Response ⏰
+- **Keep Us Informed:**  
+  Should you encounter any issues, please communicate them as early as possible. This proactive approach helps prevent missed deadlines and ensures smooth progress.
 
-Commitment of words - 
-If you made agreement verbally and next step is communicated to you from our side then you are to be committed. For example - You have agreed on the call this design would be implemented by XX time/date and PR would be ready by then, we are waiting to hear back from you.
+### 3. Commitment to Quality ✅
+- **Uphold High Standards:**  
+  While detailed quality guidelines might not be explicitly documented for every task, it’s crucial to understand the overall design goals and principles.  
+  Your code should adhere to established coding standards and design principles. Any deviation that negatively impacts quality without prior consent is considered a compromise.
 
-Timely response - If you get into any issue by any chance then you could have communicated in advance before you fail in commitment.
+### 4. Raise Timely Concerns 🚨
+- **Report Issues Promptly:**  
+  It’s normal to encounter doubts or errors during development. However, delaying the reporting of these issues can have a negative impact on the project.  
+  Our tech leads are available for consulting and troubleshooting. If needed, we can arrange a quick screen share call to resolve issues in real time.
 
-Commitment to quality -Quality commitment in code and design will not be always documented in detail, as long as you understood goal of design and high level design you can drive the changes but there should be approprite level of coding standard and design principle should be followed. Like if you have been asked to create landing page design with few options or sample provided then deviation to downgrade without consent considered quality compromized.
+---
 
-Raise timely concern or issues - Issue and concerned, doubt, queries and errors comes all the time in developers life, it all starts to have negative impact if you delay reporting. You can absolutely work on this and you own it, but reporting helps quicker resolutions. At first tech leads at padmini systems provides you consulting with resources to troubleshoot if that doesn't help then you can get into quick call over screen share work with our experts to address and get support in the call.
+## Getting Started 🌟
 
+1. **Browse Issues:**  
+   Check out our GitHub repository for issues labeled **"ready"** and select a task that fits your expertise.
+
+2. **Reach Out:**  
+   If you're unsure about which task to tackle or need additional guidance, don’t hesitate to contact us.
+
+3. **Start Contributing:**  
+   Follow these guidelines, complete your task, and get paid for your contributions!
+
+---
+
+Thank you for being a valuable part of our open source community. Let’s collaborate, innovate, and build great things together! 🚀
