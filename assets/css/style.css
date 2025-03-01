@@ -7565,4 +7565,20 @@ textarea.form-control {
   .job-item .job__title {
     margin-bottom: 10px;
   }
+}/* Header Background */
+.header {
+    background-image: url('assets/images/sliders/01.jpeg'); /* Adjust the path as necessary */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */
+    color: #fff; /* Change text color to white for contrast */
 }
+
+/* Content Background */
+#productContent {
+    background-image: url('assets/images/sliders/01.jpeg'); /* Adjust the path as necessary */
+    background-size: cover; /* Cover the entire content area */
+    background-position: center; /* Center the image */
+    color: #333; /* Change text color to dark for contrast */
+    padding: 50px 0; /* Add padding for content */
+}
+
