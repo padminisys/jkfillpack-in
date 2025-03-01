@@ -12,6 +12,38 @@
     href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cTeko:400,500,600,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.61); /* Light black transparent overlay */
+    
+    }
+    .pagetitle__heading_left i {
+      color: #ff6600;
+
+    }
+    .dir_info .row .text-white{
+     background-color: #ff6600;
+    }
+    .page-title .row .border-bottom {
+     width: 50%;
+    }
+    #our-value .fw-light{
+      color: #ff6600;
+    }
+
+    @media (max-width: 760px) { 
+      .dir_info .row .right_heading{
+     margin-top: 14% !important;
+    }
+    }
+  </style>
 </head>
 
 <body>
@@ -23,8 +55,8 @@
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+            <img src="assets/images/logo/logo.png" class="logo-light" alt="logo">
+            <img src="assets/images/logo/logo.png" class="logo-dark" alt="logo">
           </a>
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
@@ -150,7 +182,7 @@
               <li class="d-none d-lg-block">
                 <div class="module__btn module__btn-phone d-flex align-items-center">
                   <i class="icon-phone"></i>
-                  <a href="tel:5565454117">55 654 541 17</a>
+                  <a href="tel:+919167799522">+919167799522</a>
                 </div>
               </li>
             </ul><!-- /.modules-wrapper -->
@@ -163,20 +195,69 @@
        page title 
     =========================== -->
     <section id="pageTitle" class="page-title page-title-layout1 bg-overlay bg-parallax">
-      <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
+      <div class="bg-img"><img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/07/construction-21.jpg" alt="background"></div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-            <h1 class="pagetitle__heading">One of the World's leading Manufacturing Corporation!</h1>
-            <p class="pagetitle__desc">We produce positive results from ever-growing manufacturing estates, established
-              a corporate mandate to maintain strong values.</p>
-            <a href="#" class="btn btn__primary btn__hover2">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h1 class="pagetitle__heading border-bottom">About us</h1>
+            <a href="#" class="btn btn__primary btn__hover2 mb-3">
               <i class="icon-arrow-right"></i><span>Our Services</span>
             </a>
+          </div><!-- /.col-xl-7 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h3 class="pagetitle__heading_left text-light m-1"><i class="fa-solid fa-eye pr-2"></i> Vision</h3>
+              <p class="pagetitle__desc">To become No. 1 Turnkey Supplier of Filling & Packaging Machinery</p>  
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
+                <h3 class="pagetitle__heading_left text-light m-1"><i class="fa-solid fa-shield-halved pr-2"></i> Mission</h3>
+                <p class="pagetitle__desc">To strengthen our presence in the Filling & Packaging Market Globally and widen our Horizon by way of Application Engineering</p>  
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
+                  <h3 class="pagetitle__heading_left text-light m-1"><i class="fa-solid fa-pen-nib pr-2"></i> Our Values</h3>
+                  <p class="pagetitle__desc">Our people are our enduring advantage.
+                    We work in team keeping various requirements of services to our valuable customers.
+                    Our reputation is indivisible.
+                    </p>  
+                  </div>  
+            </div>     
           </div><!-- /.col-xl-7 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.page-title -->
+    
+<!-- ========================
+     Director Information
+=========================== -->
+<section class="py-5 bg-light dir_info">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Director Image with Name Overlay -->
+      <div class="col-sm-12 col-md-6 col-lg-6 text-center text-lg-start position-relative">
+        <div class="position-relative d-inline-block shadow-lg mb-2 rounded border border-dark">
+          <img src="client-data\home_page_landing_page\1._home_page_navigation\2._about_us\2._directors_details\director1\director_image\Director.png" alt="Director" class="img-fluid rounded shadow">
+          <div class="position-absolute bottom-0 start-50 translate-middle-x text-white text-center w-100 py-2">
+            <h4 class="mb-0 fw-bold text-light">Mr. Jugal K. Goyanka</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Director Information -->
+      <div class="col-sm-12 col-md-6 col-lg-6 right_heading">
+        <h2 class="fw-bold text-dark mb-3">Meet Our Director</h2>
+        <p class="fs-5 text-muted">
+          Mr. Jugal K. Goyanka, has vast Professional Experience, particularly in the field of Filling & Packaging Industry. Heading renowned manufacturers like M/s Mather + Platt India Ltd, Dynatron Pvt Ltd, Larsen & Toubro, KHS Machinery of Germany, etc.
+        </p>
+        <p class="fs-6 text-muted">
+          Under his leadership, the company has executed numerous turnkey projects, ensuring high efficiency 
+          and customer satisfaction in industries like Lube Oil, Edible Oil, and Food Processing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- ========================
       About Layout 2
@@ -190,25 +271,26 @@
               <h2 class="heading__title">J. K. Fillpack Engineers Pvt Ltd. is an Industrial operator providing full range of services in the sphere
                 of Mechanical Engineering worldwide!</h2>
             </div><!-- /heading -->
-            <div class="row">
+            <div class="row border rounded-lg border-secondary shadow p-4 bg-white">
+              <!-- First Box -->
               <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="about__text mr-30">
-                  <p>To further develop our strengths we have established a corporate mandate to maintain strong core
-                    values reflect our philosophy.</p>
-                </div>
-                <img src="assets/images/about/singnture.png" alt="singnture" class="signature">
-              </div><!-- /.col-lg-6 -->
-              <div class="col-sm-6 col-md-6 col-lg-6">
-                <p>J. K. Fillpack Engineers Pvt Ltd. are threatened as technology disrupts and software “eats the world.” Yet those that
-                  embrace change are thriving, building bigger, better, faster, and stronger products than ever before.
+                <p class="fw-bold font-weight-lighter text-secondary">
+                  J.K. Fillpack Engineers Pvt. Ltd. specializes in Filling & Packaging Machinery, delivering cutting-edge solutions since 2000. Led by industry expert Mr. Jugal K. Goyanka, the company has successfully executed projects across India and overseas in Lube Oil, Edible Oil, and Food Processing sectors, partnering with global leaders like CFT S.r.l and CMI Spa of Italy.
                 </p>
-                <p>You are helping to lead the charge; we can help you build on your past successes and prepare for your
-                  great future.</p>
-                <a href="#" class="btn btn__secondary mt-20">
-                  <i class="icon-arrow-right"></i><span>Have A Project!</span>
+              </div>
+              
+              <!-- Second Box -->
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <p class="mb-3 font-weight-lighter text-secondary">
+                  With a skilled team of 15 engineers, Fillpack provides turnkey solutions, from design to installation, ensuring efficiency and reliability. Focused on innovation and seamless execution, the company helps businesses stay ahead in a rapidly evolving market.
+                </p>
+                
+                <a href="#" class="btn btn-lg text-white" style="background-color: #ff6600; border-radius: 8px;">
+                  <i class="icon-arrow-right"></i> Have A Project!
                 </a>
-              </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
+              </div>
+            </div>
+            
           </div><!-- /.col-xl-7 -->
           <div class="col-sm-12 col-md-10 col-lg-8 col-xl-5 position-static">
             <div class="row mt-50 about__imgs-container">
@@ -697,7 +779,7 @@
                 <p class="color-gray">If you have any questions or need help, feel free to contact with our team.</p>
                 <p class="footer__contact-phone">
                   <i class="icon-phone"></i>
-                  <a href="tel:5565454117">55 654 54117</a>
+                  <a href="tel:+919167799522">+919167799522</a>
                 </p>
                 <p>2307 Beverley Rd Brooklyn, New York <br>11226 United States.</p>
                 <ul class="social__icons">

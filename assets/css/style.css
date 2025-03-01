@@ -7105,6 +7105,12 @@ textarea.form-control {
   display: inline-block;
 }
 
+    .logo-dark, .logo-light{
+      width: 200px !important;
+      height: 60px !important;
+    }
+
+
 .about-layout2 .cta__banner {
   position: absolute;
   bottom: 0;
