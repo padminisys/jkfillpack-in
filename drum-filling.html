@@ -14,6 +14,12 @@
     href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cTeko:400,500,600,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .logo-dark, .logo-light{
+      width: 200px !important;
+      height: 60px !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,8 +31,8 @@
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+            <img src="assets/images/logo/logo.png" class="logo-light " alt="logo">
+            <img src="assets/images/logo/logo.png" class="logo-dark " alt="logo">
           </a>
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
@@ -161,7 +167,7 @@
               <li class="d-none d-lg-block">
                 <div class="module__btn module__btn-phone d-flex align-items-center">
                   <i class="icon-phone"></i>
-                  <a href="tel:5565454117">55 654 541 17</a>
+                  <a href="tel:5565454117">+919167799522</a>
                 </div>
               </li>
             </ul><!-- /.modules-wrapper -->
@@ -188,85 +194,100 @@
         services Layout 2
     =========================== -->
     <section id="servicesLayout2" class="services services-layout2 pt-120 pb-90 bg-gray">
-      
-        <div class="container">
-            <div class="text__block mb-40">
-                <h5 class="text__block-title" style="font-size: 35px;">Overview</h5>
-                <p class="text__block-desc">Experience precision and efficiency with our advanced Drum
-                    Filling Machine, designed to deliver reliable and accurate filling for a variety of
-                    industrial applications. With a weigh-based system ensuring filling accuracy up to
-                    ±0.25% across a range of 20 to 50 liters, every drum is filled to perfection. The
-                    innovative “No container, No fill” feature guarantees that only properly placed
-                    containers are filled, eliminating waste and ensuring operational safety.
 
-                    Designed for seamless operation, this machine features auto movement of drummies on the
-                    filling area and is controlled by a sophisticated PLC-based system for easy changeover
-                    and optimal process management. A drip tray system effectively captures any stray oil,
-                    maintaining a clean working environment, while the 4-head design achieves a swift
-                    throughput of 4 buckets per minute for 20-liter drums. This machine is the perfect blend
-                    of technology and practicality, ideal for businesses seeking enhanced production
-                    efficiency and consistent product quality.</p>
-            </div>
-        <div class="row">
-        <div class="col-md-6">
-        <div class="product-image">
-          <img src="assets/images/products/Drum Filler.jpeg" alt="drum filler" style="height: 550px;width: 100%;" />
+      <div class="container">
+        <div class="text__block mb-40">
+          <h5 class="text__block-title" style="font-size: 35px;">Overview</h5>
+          <p class="text__block-desc">Experience precision and efficiency with our advanced Drum
+            Filling Machine, designed to deliver reliable and accurate filling for a variety of
+            industrial applications. With a weigh-based system ensuring filling accuracy up to
+            ±0.25% across a range of 20 to 50 liters, every drum is filled to perfection. The
+            innovative “No container, No fill” feature guarantees that only properly placed
+            containers are filled, eliminating waste and ensuring operational safety.
+
+            Designed for seamless operation, this machine features auto movement of drummies on the
+            filling area and is controlled by a sophisticated PLC-based system for easy changeover
+            and optimal process management. A drip tray system effectively captures any stray oil,
+            maintaining a clean working environment, while the 4-head design achieves a swift
+            throughput of 4 buckets per minute for 20-liter drums. This machine is the perfect blend
+            of technology and practicality, ideal for businesses seeking enhanced production
+            efficiency and consistent product quality.</p>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="product-specifications">
-          <h3>Product Specifications</h3>
-          <div class="table">
-            <div class="table">
-                <table>
-                    <tr>
-                        <th>Filling Type</th>
-                        <td>Weigh-based filling machine</td>
-                    </tr>
-                    <tr>
-                        <th>Filling Range</th>
-                        <td>20 Lit to 50 Lit</td>
-                    </tr>
-                    <tr>
-                        <th>Filling Accuracy</th>
-                        <td>Up to ±0.25%</td>
-                    </tr>
-                    <tr>
-                        <th>Automation</th>
-                        <td>PLC-based control system</td>
-                    </tr>
-                    <tr>
-                        <th>Container Detection</th>
-                        <td>No container, No fill</td>
-                    </tr>
-                    <tr>
-                        <th>Drum Movement</th>
-                        <td>Auto movement of drummies on filling area</td>
-                    </tr>
-                    <tr>
-                        <th>Changeover</th>
-                        <td>Easy changeover</td>
-                    </tr>
-                    <tr>
-                        <th>Drip Prevention</th>
-                        <td>Drip tray to arrest drop of oil</td>
-                    </tr>
-                    <tr>
-                        <th>Filling Speed</th>
-                        <td>4 buckets/min of 20 Lit</td>
-                    </tr>
-                    <tr>
-                        <th>Number of Filling Heads</th>
-                        <td>4</td>
-                    </tr>
-                </table>
-            </div>
-            
+        <div class="row">
+          <div class="col-md-6">
+            <div class="product-image slider-container">
+              <div class="sliderSlides">
+                <img src="assets/images/products/Drum Filler.jpeg" alt="Drum Filler"
+                  style="height: 550px; width: 100%;" />
+              </div>
 
+              <div class="sliderSlides">
+                <img src="assets/images/products/Drum Filler1.jpeg" alt="Drum Filler 1"
+                  style="height: 550px; width: 100%;" />
+              </div>
+
+              <button class="slider-prev" onclick="plusSlides(-1)">❮</button>
+              <button class="slider-next" onclick="plusSlides(1)">❯</button>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-6">
+            <div class="product-specifications">
+              <h3>Product Specifications</h3>
+              <div class="table">
+                <div class="table">
+                  <table>
+                    <tr>
+                      <th>Filling Type</th>
+                      <td>Weigh-based filling machine</td>
+                    </tr>
+                    <tr>
+                      <th>Filling Range</th>
+                      <td>20 Lit to 50 Lit</td>
+                    </tr>
+                    <tr>
+                      <th>Filling Accuracy</th>
+                      <td>Up to ±0.25%</td>
+                    </tr>
+                    <tr>
+                      <th>Automation</th>
+                      <td>PLC-based control system</td>
+                    </tr>
+                    <tr>
+                      <th>Container Detection</th>
+                      <td>No container, No fill</td>
+                    </tr>
+                    <tr>
+                      <th>Drum Movement</th>
+                      <td>Auto movement of drummies on filling area</td>
+                    </tr>
+                    <tr>
+                      <th>Changeover</th>
+                      <td>Easy changeover</td>
+                    </tr>
+                    <tr>
+                      <th>Drip Prevention</th>
+                      <td>Drip tray to arrest drop of oil</td>
+                    </tr>
+                    <tr>
+                      <th>Filling Speed</th>
+                      <td>4 buckets/min of 20 Lit</td>
+                    </tr>
+                    <tr>
+                      <th>Number of Filling Heads</th>
+                      <td>4</td>
+                    </tr>
+                  </table>
+                </div>
+
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
         <div class="row heading heading-2 mb-40">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <span class="heading__subtitle">We Work With Global Industries!</span>
@@ -378,14 +399,27 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="about__img">
-              <img src="assets/images/products/Drum Filler1.jpeg" alt="drum fill" style="height: 550px;width: 100%;">
-              
+              <img src="assets/images/about/1.jpg" alt="about" class="img-fluid">
+              <div class="cta__banner">
+                <div class="cta__icon">
+                  <i class="icon-factory-2"></i>
+                </div>
+                <h5 class="cta__title">Building The Future, Restoring The Past</h5>
+                <p class="cta__desc">One of the World's leading Industry Corporation!</p>
+                <a href="#" class="btn btn__white btn__link">
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </div>
             </div><!-- /.about__img -->
           </div><!-- /.col-lg-6 -->
           <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="heading heading-2 mt-50 mb-30">
               <span class="heading__subtitle">Building Relationships That Last</span>
-              <h2 class="heading__title">DRUM FILLING</p>
+              <h2 class="heading__title">Providing full services in sphere of Mechanical Engineering !</h2>
+              <p class="heading__desc">koira industries are threatened as technology disrupts “eats the world.” Yet
+                those that embrace change are thriving, building bigger, better, faster, and stronger products than ever
+                before. You are helping to lead the charge; we can help you build on your past successes and prepare for
+                future.</p>
             </div><!-- /heading -->
             <a href="#" class="btn btn__secondary mr-30">
               <i class="icon-arrow-right"></i><span>Have A Project!</span>
@@ -396,7 +430,8 @@
       </div><!-- /.container -->
     </section><!-- /.About layout 1 -->
 
-    
+
+
 
     <!-- ========================= 
        Testimonials layout 1
@@ -590,6 +625,7 @@
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
