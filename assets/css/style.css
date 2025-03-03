@@ -3397,9 +3397,9 @@ textarea.form-control {
   }
 
   .navbar .dropdown-menu.wide-dropdown-menu {
-    min-width: 550px;
+    min-width: 750px;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .navbar .dropdown-menu.wide-dropdown-menu>.nav__item {
