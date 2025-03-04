@@ -2475,6 +2475,42 @@ textarea.form-control {
 /*----------------------------
       Header & Navbar
 -----------------------------*/
+ 
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.sliderSlides {
+  display: none;
+  width: 100%;
+}
+
+.slider-prev, .slider-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.slider-next { right: 10px; }
+.slider-prev { left: 10px; }
+
+.slider-prev:hover, .slider-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 .header {
   position: relative;
   z-index: 1010;
