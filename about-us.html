@@ -43,6 +43,9 @@
      margin-top: 14% !important;
     }
     }
+    .navbar .dropdown-toggle {
+      color:#333333 !important;
+    }
   </style>
 </head>
 
@@ -52,7 +55,7 @@
         Header
     =========================== -->
     <header id="header" class="header header-transparent">
-      <nav class="navbar navbar-expand-lg sticky-navbar">
+      <nav class="navbar navbar-expand-lg sticky-navbar shadow">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo/logo.png" class="logo-light" alt="logo">
@@ -62,7 +65,7 @@
             <span class="menu-lines"><span></span></span>
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto text-dark navbar">
               <li class="nav__item with-dropdown">
                 <a href="index.html" class="dropdown-toggle nav__item-link active">Home</a>
                 <i class="fa fa-angle-right" data-toggle="dropdown"></i>
@@ -168,21 +171,21 @@
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="contacs.html" class="nav__item-link">Contacts</a>
+                <a href="contacs.html" class="nav__item-link" style="color: #333333;">Contacts</a>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <div class="navbar-modules">
             <ul class="list-unstyled d-flex align-items-center modules__btns-list">
-              <li><a href="#" class="module__btn module__btn-search"><i class="fa fa-search"></i></a></li>
+              <li><a href="#" class="module__btn module__btn-search"><i class="fa fa-search" style="color: #333333;"></i></a></li>
               <li class="d-none d-lg-block"><a href="request-quote.html"
-                  class="btn btn__primary btn__bordered module__btn-request">
+                  class="btn btn__primary btn__bordered module__btn-request" style="color: #ff6600;">
                   <span>Get A Quote</span><i class="icon-arrow-right"></i>
                 </a></li>
               <li class="d-none d-lg-block">
                 <div class="module__btn module__btn-phone d-flex align-items-center">
                   <i class="icon-phone"></i>
-                  <a href="tel:+919167799522">+919167799522</a>
+                  <a href="tel:+919167799522" style="color: #333333;">+919167799522</a>
                 </div>
               </li>
             </ul><!-- /.modules-wrapper -->
@@ -191,6 +194,62 @@
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
+       <!-- ========================
+      About Layout 2
+    =========================== -->
+    <section id="aboutLayout2" class="about about-layout2 pt-120 pb-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+            <div class="heading heading-2 mb-50">
+              <span class="heading__subtitle">High Performance Services For Industries And Technologies!</span>
+              <h2 class="heading__title">J. K. Fillpack Engineers Pvt Ltd. is an Industrial operator providing full range of services in the sphere
+                of Mechanical Engineering worldwide!</h2>
+            </div><!-- /heading -->
+            <div class="row border rounded-lg border-secondary shadow p-4 bg-white">
+              <!-- First Box -->
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <p class="fw-bold font-weight-lighter text-secondary">
+                  J.K. Fillpack Engineers Pvt. Ltd. specializes in Filling & Packaging Machinery, delivering cutting-edge solutions since 2000. Led by industry expert Mr. Jugal K. Goyanka, the company has successfully executed projects across India and overseas in Lube Oil, Edible Oil, and Food Processing sectors, partnering with global leaders like CFT S.r.l and CMI Spa of Italy.
+                </p>
+              </div>
+              
+              <!-- Second Box -->
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <p class="mb-3 font-weight-lighter text-secondary">
+                  With a skilled team of 15 engineers, Fillpack provides turnkey solutions, from design to installation, ensuring efficiency and reliability. Focused on innovation and seamless execution, the company helps businesses stay ahead in a rapidly evolving market.
+                </p>
+                
+                <a href="#" class="btn btn-lg text-white" style="background-color: #ff6600; border-radius: 8px;">
+                  <i class="icon-arrow-right"></i> Have A Project!
+                </a>
+              </div>
+            </div>
+            
+          </div><!-- /.col-xl-7 -->
+          <div class="col-sm-12 col-md-10 col-lg-8 col-xl-5 position-static">
+            <div class="row mt-50 about__imgs-container">
+              <div class="col-7">
+                <div class="about__img">
+                  <img src="assets/images/about/2.jpg" alt="about" class="img-fluid w-100">
+                  <div class="cta__banner">
+                    <div class="cta__icon">
+                      <i class="icon-factory-2"></i>
+                    </div>
+                    <h5 class="cta__title mb-0">Building The Future, Restoring The Past</h5>
+                  </div><!-- /.cta__banner -->
+                </div><!-- /.about-img -->
+              </div><!-- /.col-7 -->
+              <div class="col-5">
+                <div class="about__img mt-40">
+                  <img src="assets/images/about/3.jpg" alt="about" class="img-fluid w-100">
+                </div><!-- /.about-img -->
+              </div><!-- /.col-5 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-xl-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About Layout 2 -->
     <!-- ========================
        page title 
     =========================== -->
@@ -259,62 +318,7 @@
 </section>
 
 
-    <!-- ========================
-      About Layout 2
-    =========================== -->
-    <section id="aboutLayout2" class="about about-layout2 pt-120 pb-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-            <div class="heading heading-2 mb-50">
-              <span class="heading__subtitle">High Performance Services For Industries And Technologies!</span>
-              <h2 class="heading__title">J. K. Fillpack Engineers Pvt Ltd. is an Industrial operator providing full range of services in the sphere
-                of Mechanical Engineering worldwide!</h2>
-            </div><!-- /heading -->
-            <div class="row border rounded-lg border-secondary shadow p-4 bg-white">
-              <!-- First Box -->
-              <div class="col-sm-6 col-md-6 col-lg-6">
-                <p class="fw-bold font-weight-lighter text-secondary">
-                  J.K. Fillpack Engineers Pvt. Ltd. specializes in Filling & Packaging Machinery, delivering cutting-edge solutions since 2000. Led by industry expert Mr. Jugal K. Goyanka, the company has successfully executed projects across India and overseas in Lube Oil, Edible Oil, and Food Processing sectors, partnering with global leaders like CFT S.r.l and CMI Spa of Italy.
-                </p>
-              </div>
-              
-              <!-- Second Box -->
-              <div class="col-sm-6 col-md-6 col-lg-6">
-                <p class="mb-3 font-weight-lighter text-secondary">
-                  With a skilled team of 15 engineers, Fillpack provides turnkey solutions, from design to installation, ensuring efficiency and reliability. Focused on innovation and seamless execution, the company helps businesses stay ahead in a rapidly evolving market.
-                </p>
-                
-                <a href="#" class="btn btn-lg text-white" style="background-color: #ff6600; border-radius: 8px;">
-                  <i class="icon-arrow-right"></i> Have A Project!
-                </a>
-              </div>
-            </div>
-            
-          </div><!-- /.col-xl-7 -->
-          <div class="col-sm-12 col-md-10 col-lg-8 col-xl-5 position-static">
-            <div class="row mt-50 about__imgs-container">
-              <div class="col-7">
-                <div class="about__img">
-                  <img src="assets/images/about/2.jpg" alt="about" class="img-fluid w-100">
-                  <div class="cta__banner">
-                    <div class="cta__icon">
-                      <i class="icon-factory-2"></i>
-                    </div>
-                    <h5 class="cta__title mb-0">Building The Future, Restoring The Past</h5>
-                  </div><!-- /.cta__banner -->
-                </div><!-- /.about-img -->
-              </div><!-- /.col-7 -->
-              <div class="col-5">
-                <div class="about__img mt-40">
-                  <img src="assets/images/about/3.jpg" alt="about" class="img-fluid w-100">
-                </div><!-- /.about-img -->
-              </div><!-- /.col-5 -->
-            </div><!-- /.row -->
-          </div><!-- /.col-xl-5 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About Layout 2 -->
+ 
 
     <!-- =====================
         Features numberd 
