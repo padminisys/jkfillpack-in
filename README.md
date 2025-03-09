@@ -1,6 +1,6 @@
 # Rules to Work as a Paid Open Source Contributor 🎉
 
-Welcome to **Padmini Systems**' open source contribution platform! Here, you can earn money by contributing to our projects through GitHub issues. This guide explains everything in a clear, concise, and easy-to-follow format.
+Welcome to **Padmini Systems**' open source contribution Project! Here, you can earn money by contributing to our projects through GitHub issues. This guide explains everything in a clear, concise, and easy-to-follow format.
 
 ---
 
