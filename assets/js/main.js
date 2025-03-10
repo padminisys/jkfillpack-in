@@ -16,7 +16,9 @@
     12- Popup Video
     13- CounterUp
     14- initialize NiceSelect Plugin
-     
+     15 Slide of the product
+     16 header
+     17 footer
  ----------------------------*/
 
 $(function () {
@@ -267,3 +269,13 @@ $(function () {
               slides[slideIndex].style.display = "block";
             });
          
+
+
+    /*header  */
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header').innerHTML = data);
+/*Footer*/      
+                fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
