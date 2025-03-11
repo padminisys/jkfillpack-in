@@ -3291,15 +3291,18 @@ textarea.form-control {
 
   .navbar .dropdown-menu .nav__item {
     padding: 0 15px 0 30px;
+    
   }
 
   .navbar .dropdown-menu .nav__item .nav__item-link {
     padding-left: 0;
     border-bottom: none;
+    
   }
 
   .navbar .dropdown-menu .dropdown-menu-col .nav__item {
     padding: 0;
+    
   }
 
   .navbar .dropdown-menu-col h6 {
@@ -3453,7 +3456,7 @@ textarea.form-control {
   }
 
   .navbar .dropdown-menu.wide-dropdown-menu .dropdown-menu-col {
-    padding: 40px 0 27px;
+    padding:20px 0 15px;
   }
 
   .navbar .dropdown-menu.wide-dropdown-menu .dropdown-menu-col:first-child:before {
