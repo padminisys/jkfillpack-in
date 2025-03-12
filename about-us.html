@@ -36,7 +36,7 @@
       }
 
       .vision-mission h2 {
-        color: #ff6600; /* Orange color */
+        color: #ff5e14; /* Orange color */
         font-size: 3rem;
         font-weight: bold;
         text-transform: uppercase;
@@ -51,7 +51,7 @@
         display: block;
         width: 80px;
         height: 5px;
-        background-color: #ff6600;
+        background-color: #ff5e14;
         margin: 10px auto 0;
       }
 
@@ -86,7 +86,7 @@
         padding: 18px;
         margin-bottom: 18px;
         background: #fff;
-        border-left: 6px solid #ff6600;
+        border-left: 6px solid #ff5e14;
         box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
         animation: fadeInUp 1s ease-in-out;
       }
@@ -121,53 +121,58 @@
           opacity: 1;
         }
       }
+/*Section excellence*/
+.expertise-section {
+    padding: 40px 10%;
+    background-color: #ff5e14; /* Light orange background */
+}
 
-      .slider {
-        position: relative;
-        max-width: 800px; /* Adjust as needed */
-        margin: auto;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
+.expertise-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 
-      .slides img {
-        width: 100%;
-        height: auto;
-        display: none;
-        object-fit: contain; /* Ensures images maintain original proportions */
-      }
+.expertise-container.reverse {
+    flex-direction: row-reverse; /* Reverse for alternating layout */
+}
 
-      .slides img.active {
-        display: block;
-      }
+.expertise-image {
+    flex: 1;
+    max-width: 45%;
+}
 
-      .prev,
-      .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(255, 152, 0, 0.7);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
+.expertise-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-      .prev:hover,
-      .next:hover {
-        background-color: rgba(255, 87, 34, 0.9);
-      }
+.expertise-content {
+    flex: 1;
+    text-align: justify;
+}
 
-      .prev {
-        left: 10px;
-      }
-      .next {
-        right: 10px;
-      }
+.expertise-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.expertise-content ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.expertise-content ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: white;
+}
 
       /*Director section Css*/
       .director-section {
@@ -184,7 +189,14 @@ h2 {
     font-size: 36px;
     margin-bottom: 40px;
 }
-
+.demou{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300px;
+}
+.strong12{
+  color:#111
+}
 .directors-container {
     display: flex;
     justify-content: center;
@@ -213,16 +225,18 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 6px solid #ff9800;
+    border: 6px solid #ff5e14;
 }
 
 .position {
-    color: #ff9800;
+    color: #ff5e14;
     /* font-weight: bold; */
     font-size: 22px;
     margin-bottom: 15px;
 }
-
+.highlight{
+  font-size: 14px;
+}
 .director-bio {
     margin-top: 20px;
     padding: 30px;
@@ -652,36 +666,44 @@ h2 {
           </li>
         </ul>
       </section>
-      <section class="image-slider">
-        <h2 style="text-align: center">Innovation at Work</h2>
-        <div class="slider">
-          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-          <div class="slides">
-            <img
-              src="assets/images/about/Examples-of-Hard-Working-2.webp"
-              class="active"
-              alt="Office Image 1"
-            />
-            <img
-              src="assets/images/about/collaboration.jpg"
-              alt="Office Image 2"
-            />
-            <img
-              src="assets/images/about/21_Directoroffice_1.jpg"
-              alt="Office Image 3"
-            />
-            <img
-              src="assets/images/about/laptop_image.jpg"
-              alt="Office Image 4"
-            />
-            <img
-              src="assets/images/about/building-blueprint-architecture-engineering-team-planning-real-estate-development-project-teamwork-collaboration-diversity-255396146.webp"
-              alt="Office Image 4"
-            />
-          </div>
-          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      <section class="expertise-section">
+        <div class="expertise-container">
+            <div class="expertise-image">
+                <img src="assets/images/about/champ.png" alt="Expertise Image">
+            </div>
+            <div class="expertise-content">
+                <h2>Expertise and Capabilities</h2>
+                <p class="demou">Under the visionary leadership of Mr. Jugal K. Goyanka, FILLPACK has grown into a trusted name in the filling and packaging industry. His deep industry experience and strategic insight have driven the company to supply and commission numerous filling and packaging lines across various sectors. With highly professional techno-commercial skills, Mr. Goyanka’s leadership has been instrumental in delivering solutions that are not only innovative but also perfectly tailored to the specific requirements of our customers.</p>
+                <ul>
+                    <li><strong class="strong12">Extensive experience</strong> in the filling & packaging industry.</li>
+                    <li><strong class="strong12">Proven track record</strong> working with industry giants.</li>
+                    <li><strong class="strong12">Strategic partnerships</strong> with both foreign and Indian machinery manufacturers.</li>
+                    <li><strong class="strong12">Comprehensive support services</strong>, including equipment selection, after-sales service, and stocking of essential spare parts.</li>
+                    <li><strong class="strong12">Consistently delivers projects</strong> on a turnkey basis, ensuring seamless integration from design to final commissioning.</li>
+                </ul>
+            </div>
         </div>
-      </section>
+    </section>
+    
+    <section class="expertise-section">
+        <div class="expertise-container reverse">
+            <div class="expertise-image">
+                <img src="assets/images/about/checking.png" alt="Operational Excellence Image">
+            </div>
+            <div class="expertise-content">
+                <h2>Operational Excellence</h2>
+                <p class="demou">At FILLPACK, our commitment to operational excellence is demonstrated through an end-to-end approach in machinery development. Our process covers everything from initial conceptual design and precision engineering to thorough inspection and final testing before dispatch. With a dedicated team of 15 highly skilled engineers, we manage complete installation, commissioning, and ongoing after-sales support in-house—minimizing dependency on external suppliers and ensuring prompt service and maintenance for every project.</p>
+                <ul>
+                    <li><strong class="strong12">Comprehensive manufacturing process:</strong> design, inspection, and final trial.</li>
+                    <li><strong class="strong12">A dedicated, self-reliant team</strong> of 15 experienced engineers.</li>
+                    <li><strong class="strong12">In-house installation, commissioning, and maintenance services.</strong></li>
+                    <li><strong class="strong12">Focus on delivering complete turnkey solutions</strong> tailored to customer needs.</li>
+                    <li><strong class="strong12">Continuous commitment</strong> to quality, reliability, and innovation.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
       <!-- =====================
       Director Section
       ======================== -->
