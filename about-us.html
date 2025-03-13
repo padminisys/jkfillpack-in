@@ -34,7 +34,7 @@
     .vision-mission h2 {
       color: #ff5e14;
       /* Orange color */
-      font-size: 3rem;
+      font-size: 30px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -62,7 +62,7 @@
     .vision-mission ul {
       color: #000;
       /* Black text */
-      font-size: 1.6rem;
+      font-size: 18px;
       max-width: 900px;
       margin: 0 auto;
       line-height: 2.2;
@@ -305,6 +305,74 @@
       }
 
     }
+
+
+/* 
+    company profile section css */
+
+    /* Company Profile Section */
+.company-profile {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.company-profile h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.company-profile p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+.company-profile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List Items */
+.company-profile li {
+    font-size: 18px;
+    color: #333;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Icons */
+.company-profile li i {
+    color: #111;
+    margin-right: 12px;
+    font-size: 22px;
+}
+
+/* Add Custom Bullet Points */
+.company-profile li::before {
+    content: "•";  /* Bullet Point */
+    color: #111;
+    font-size: 45px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
   </style>
 </head>
 
@@ -554,6 +622,17 @@
     <!-- ========================
       About Layout 2
     =========================== -->
+    <section class="company-profile">
+      <h2>Company Profile</h2>
+      <p>J.K. Fillpack Engineers Pvt. Ltd. (FILLPACK) is a pioneering engineering firm established in 2000, specializing in the design, manufacture, and commissioning of state-of-the-art filling and packaging machinery. Founded by a team of highly professional and experienced engineers, FILLPACK has consistently delivered innovative, turnkey solutions that meet the demanding requirements of industries such as lube oil, edible oil, and food processing – both domestically and internationally.</p>
+      <ul>
+          <li><i class="icon-founde"></i> Founded in 2000 by seasoned engineering professionals.</li>
+          <li><i class="icons-machine"></i> Specializes in filling & packaging machinery and equipment.</li>
+          <li><i class="fas fa-utensils"></i> Serves key sectors including lube oil, edible oil, food processing, and allied industries.</li>
+          <li><i class="fas fa-handshake"></i> Partnered with renowned manufacturers such as CFT S.r.l and CMI Spa of Italy.</li>
+          <li><i class="fas fa-user-tie"></i> Led by Mr. Jugal K. Goyanka, with experience at M/s Mather + Platt India Ltd, Dynatron Pvt Ltd, Larsen & Toubro, and KHS Machinery (Germany).</li>
+      </ul>
+  </section>
     <section class="vision-mission">
       <h2>Our Vision</h2>
       <p>To become No. 1 Turnkey Supplier of Filling & Packaging Machinery</p>
@@ -575,6 +654,12 @@
           reputation is indivisible.
         </li>
       </ul>
+    </section>
+    <section class="about-section">
+      <div class="about-text">
+        <p>
+     
+     
     </section>
     <section class="expertise-section">
       <div class="expertise-container">
