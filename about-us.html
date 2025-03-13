@@ -1,1494 +1,1295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="J.K. Fillpack Engineers Pvt Ltd. is a leader in custom engineered filling and packaging machinery solutions. Our product range includes linear screw capping machines, automatic linear and rotary screw capping machines, cap elevators, stainless steel gravity roller conveyors, diverter and belt conveyor systems, lid pressing machines, bottle capping machines, and more. Trusted by global industry leaders, our innovative machinery drives productivity and efficiency across the beverage, oil & gas, food processing, chemicals, and allied industries."
-    />
-    <meta
-      name="keywords"
-      content="filling machinery, packaging machinery, linear screw capping machine, automatic linear screw capping machine, automatic rotary screw capping machine, screw capping machine, cap elevator, stainless steel gravity roller conveyor, diverter conveyor system, belt conveyor system, lid pressing machine, bottle capping machine, turnkey projects, custom machinery, JK Fillpack"
-    />
-    <meta name="robots" content="index, follow" />
-    <link href="assets/images/favicon/favicon.png" rel="icon" />
-    <title>J. K. Fillpack Engineers</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cTeko:400,500,600,700&display=swap"
-    />
-    <link rel="stylesheet" href="assets/css/libraries.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      .logo-dark,
-      .logo-light {
-        width: 200px !important;
-        height: 60px !important;
-      }
-      .vision-mission {
-        width: 100%;
-        background-color: #f9f9f9;
-        padding: 60px 20px;
-        text-align: center;
-        animation: fadeIn 1.5s ease-in-out;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="J.K. Fillpack Engineers Pvt Ltd. is a leader in custom engineered filling and packaging machinery solutions. Our product range includes linear screw capping machines, automatic linear and rotary screw capping machines, cap elevators, stainless steel gravity roller conveyors, diverter and belt conveyor systems, lid pressing machines, bottle capping machines, and more. Trusted by global industry leaders, our innovative machinery drives productivity and efficiency across the beverage, oil & gas, food processing, chemicals, and allied industries." />
+  <meta name="keywords"
+    content="filling machinery, packaging machinery, linear screw capping machine, automatic linear screw capping machine, automatic rotary screw capping machine, screw capping machine, cap elevator, stainless steel gravity roller conveyor, diverter conveyor system, belt conveyor system, lid pressing machine, bottle capping machine, turnkey projects, custom machinery, JK Fillpack" />
+  <meta name="robots" content="index, follow" />
+  <link href="assets/images/favicon/favicon.png" rel="icon" />
+  <title>J. K. Fillpack Engineers</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cTeko:400,500,600,700&display=swap" />
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .logo-dark,
+    .logo-light {
+      width: 200px !important;
+      height: 60px !important;
+    }
+
+    .vision-mission {
+      width: 100%;
+      background-color: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .vision-mission h2 {
+      color: #ff5e14;
+      /* Orange color */
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      /* Increased space between title and text */
+      animation: slideIn 1s ease-in-out;
+      position: relative;
+    }
+
+    .vision-mission h2::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 5px;
+      background-color: #ff5e14;
+      margin: 10px auto 0;
+    }
+
+    .vision-mission h2:nth-of-type(2) {
+      margin-top: 50px;
+      /* Adds space before 'Our Mission' */
+    }
+
+    .vision-mission p,
+    .vision-mission ul {
+      color: #000;
+      /* Black text */
+      font-size: 1.6rem;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 2.2;
+      font-weight: bold;
+      /* Making text stand out */
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .vision-mission ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .vision-mission li {
+      position: relative;
+      padding: 18px;
+      margin-bottom: 18px;
+      background: #fff;
+      border-left: 6px solid #ff5e14;
+      box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
       }
 
-      .vision-mission h2 {
-        color: #ff5e14; /* Orange color */
-        font-size: 3rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 30px; /* Increased space between title and text */
-        animation: slideIn 1s ease-in-out;
-        position: relative;
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
       }
 
-      .vision-mission h2::after {
-        content: "";
-        display: block;
-        width: 80px;
-        height: 5px;
-        background-color: #ff5e14;
-        margin: 10px auto 0;
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
       }
 
-      .vision-mission h2:nth-of-type(2) {
-        margin-top: 50px; /* Adds space before 'Our Mission' */
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /*Section excellence*/
+    .expertise-section {
+      padding: 40px 10%;
+      background-color: #ff5e14;
+      /* Light orange background */
+    }
+
+    .expertise-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .expertise-container.reverse {
+      flex-direction: row-reverse;
+      /* Reverse for alternating layout */
+    }
+
+    .expertise-image {
+      flex: 1;
+      max-width: 45%;
+    }
+
+    .expertise-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .expertise-content {
+      flex: 1;
+      text-align: justify;
+    }
+
+    .expertise-content h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 15px;
+    }
+
+    .expertise-content ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .expertise-content ul li {
+      font-size: 14px;
+      margin-bottom: 12px;
+      line-height: 1.6;
+      color: white;
+    }
+
+    /*Director section Css*/
+    .director-section {
+      text-align: center;
+      background-color: #fff3e0;
+      padding: 80px 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .demou {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300px;
+    }
+
+    .strong12 {
+      color: #111
+    }
+
+    .directors-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+
+    .director-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      padding: 50px;
+      width: 850px;
+      /* Increased width */
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .director-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .director-photo {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 6px solid #ff5e14;
+    }
+
+    .position {
+      color: #ff5e14;
+      /* font-weight: bold; */
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      font-size: 14px;
+    }
+
+    .director-bio {
+      margin-top: 20px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      font-size: 20px;
+      line-height: 1.7;
+      text-align: justify;
+      color: black;
+      font-weight: 500;
+    }
+
+    .bio-highlights {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .bio-highlights ul {
+      list-style-type: disc;
+      /* Bullet points */
+      padding-left: 20px;
+      /* Align bullets properly */
+    }
+
+    .bio-highlights li {
+      .bio-highlights {
+        margin-top: 20px;
+        text-align: justify;
       }
 
-      .vision-mission p,
-      .vision-mission ul {
-        color: #000; /* Black text */
-        font-size: 1.6rem;
-        max-width: 900px;
-        margin: 0 auto;
-        line-height: 2.2;
-        font-weight: bold; /* Making text stand out */
-        background: linear-gradient(
-          90deg,
-          rgba(255, 102, 0, 0.1) 0%,
-          rgba(255, 255, 255, 1) 100%
-        ); /* Light orange highlight */
-        padding: 15px;
-        border-radius: 10px;
+      .bio-highlights ul {
+        list-style-type: disc;
+        /* Bullet points */
+        padding-left: 20px;
+        /* Align bullets properly */
       }
 
-      .vision-mission ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      .vision-mission li {
-        position: relative;
-        padding: 18px;
-        margin-bottom: 18px;
-        background: #fff;
-        border-left: 6px solid #ff5e14;
-        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
-        animation: fadeInUp 1s ease-in-out;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
+      .bio-highlights li {
+        .bio-highlights {
+          margin-top: 20px;
+          text-align: justify;
         }
-        to {
-          opacity: 1;
+
+        .bio-highlights ul {
+          list-style-type: disc;
+          /* Bullet points */
+          padding-left: 20px;
+          /* Align bullets properly */
         }
+
+        .bio-highlights li {
+          font-size: 18px;
+          margin-bottom: 12px;
+          line-height: 1.6;
+        }
+
       }
 
-      @keyframes slideIn {
-        from {
-          transform: translateY(-20px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
+    }
+  </style>
+</head>
 
-      @keyframes fadeInUp {
-        from {
-          transform: translateY(20px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-/*Section excellence*/
-.expertise-section {
-    padding: 40px 10%;
-    background-color: #ff5e14; /* Light orange background */
-}
-
-.expertise-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.expertise-container.reverse {
-    flex-direction: row-reverse; /* Reverse for alternating layout */
-}
-
-.expertise-image {
-    flex: 1;
-    max-width: 45%;
-}
-
-.expertise-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.expertise-content {
-    flex: 1;
-    text-align: justify;
-}
-
-.expertise-content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 15px;
-}
-
-.expertise-content ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-.expertise-content ul li {
-    font-size: 14px;
-    margin-bottom: 12px;
-    line-height: 1.6;
-    color: white;
-}
-
-      /*Director section Css*/
-      .director-section {
-    text-align: center;
-    background-color: #fff3e0;
-    padding: 80px 20px;
-    border-radius: 10px;
-}
-
-h2 {
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-.demou{
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300px;
-}
-.strong12{
-  color:#111
-}
-.directors-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-
-.director-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    padding: 50px;
-    width: 850px; /* Increased width */
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.director-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
-}
-
-.director-photo {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 6px solid #ff5e14;
-}
-
-.position {
-    color: #ff5e14;
-    /* font-weight: bold; */
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-.highlight{
-  font-size: 14px;
-}
-.director-bio {
-    margin-top: 20px;
-    padding: 30px;
-    background: #ffe0b2;
-    border-radius: 12px;
-    font-size: 20px;
-    line-height: 1.7;
-    text-align: justify;
-    color: black;
-    font-weight: 500;
-}
-
-.bio-highlights {
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.bio-highlights ul {
-    list-style-type: disc; /* Bullet points */
-    padding-left: 20px; /* Align bullets properly */
-}
-
-.bio-highlights li {
-  .bio-highlights {
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.bio-highlights ul {
-    list-style-type: disc; /* Bullet points */
-    padding-left: 20px; /* Align bullets properly */
-}
-
-.bio-highlights li {
-  .bio-highlights {
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.bio-highlights ul {
-    list-style-type: disc; /* Bullet points */
-    padding-left: 20px; /* Align bullets properly */
-}
-
-.bio-highlights li {
-    font-size: 18px;
-    margin-bottom: 12px;
-    line-height: 1.6;
-}
-
-}
-
-}
-
-
-    </style>
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <!-- =========================
+<body>
+  <div class="wrapper">
+    <!-- =========================
         Header
     =========================== -->
-      <header id="header" class="header header-transparent">
-        <nav class="navbar navbar-expand-lg sticky-navbar">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="assets/images/logo/logo.png"
-                class="logo-light"
-                alt="logo"
-              />
-              <img
-                src="assets/images/logo/logo.png"
-                class="logo-dark"
-                alt="logo"
-              />
-            </a>
-            <button class="navbar-toggler" type="button">
-              <span class="menu-lines"><span></span></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNavigation">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav__item with-dropdown">
-                  <a
-                    href="index.html"
-                    class="dropdown-toggle nav__item-link active"
-                    >Home</a
-                  >
-                  <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item with-dropdown">
-                  <a href="about-us.html" class="dropdown-toggle nav__item-link"
-                    >Company</a
-                  >
-                  <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                  <ul class="dropdown-menu">
-                    <li class="nav__item">
-                      <a href="about-us.html" class="nav__item-link"
-                        >About Us</a
-                      >
-                    </li>
-                    <!-- /.nav-item -->
-                    <li class="nav__item">
-                      <a href="why-us.html" class="nav__item-link"
-                        >Why Choose Us</a
-                      >
-                    </li>
-                    <!-- /.nav-item -->
-                    <li class="nav__item">
-                      <a href="leadership-team.html" class="nav__item-link"
-                        >Leadership Team</a
-                      >
-                    </li>
-                    <!-- /.nav-item -->
-                    <!-- /.nav-item -->
-                    <li class="nav__item">
-                      <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
-                    </li>
-                    <!-- /.nav-item -->
-                    <li class="nav__item">
-                      <a href="careers.html" class="nav__item-link">careers</a>
-                    </li>
-                    <!-- /.nav-item -->
-                  </ul>
-                  <!-- /.dropdown-menu -->
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item with-dropdown">
-                  <a href="#" class="dropdown-toggle nav__item-link"
-                    >Products</a
-                  >
-                  <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                  <ul class="dropdown-menu wide-dropdown-menu">
-                    <li class="nav__item">
-                      <div class="row mx-0">
-                        <div class="col-sm-6 dropdown-menu-col">
-                          <h6>Conveyor System</h6>
-                          <ul class="nav flex-column">
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="conveyor-system-belt-conveyor.html"
-                                >Belt Conveyor</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="conveyor-system-slat-conveyor.html"
-                                >Slat Conveyor</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="conveyor-system-spiral_conveyor.html"
-                                >Spiral Conveyor</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="conveyor-system-modular-conveyor.html"
-                                >Modular Conveyor</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="conveyor-system-power-roller-conveyor.html"
-                                >PowerRoller Conveyor</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="conveyor-system-gravity-roller-conveyor.html"
-                                >Gravity Roller Conveyor</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                          </ul>
-                        </div>
-                        <!-- /.col-sm-6 -->
-                        <div class="col-sm-6 dropdown-menu-col">
-                          <h6>Filling Machine</h6>
-                          <ul class="nav flex-column">
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="filling-machine-barrel-filler.html"
-                                >Barrel Filler</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="filling-machine-pail-filler.html"
-                                >Pail Filler</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a class="nav__item-link" href="drum-filling.html"
-                                >Drum Filler</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="filling-machine-linear-filler.html"
-                                >Linear Filler</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="filling-machine-rotary-filler.html"
-                                >Rotary Filler</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                          </ul>
-                        </div>
-                        <!-- /.col-sm-6 -->
-                        <div class="col-sm-6 dropdown-menu-col">
-                          <h6>Capping Machine</h6>
-                          <ul class="nav flex-column">
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="capping-machine-linear-capper.html"
-                                >Linear Capper</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="capping-machine-rotary-capper.html"
-                                >Rotary Capper</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <h6>Lid Pressing Machine</h6>
-                            <ul class="nav flex-column">
-                              <li class="nav__item">
-                                <a
-                                  class="nav__item-link"
-                                  href="lid-pressing-machine-lid-pressing-machine.html"
-                                  >Lid Pressing Machine</a
-                                >
-                              </li>
-                              <!-- /.nav-item -->
-                            </ul>
-                            <h6>Bopp Taping Machine</h6>
-                            <ul class="nav flex-column">
-                              <li class="nav__item">
-                                <a
-                                  class="nav__item-link"
-                                  href="bopp-taping-machine-bopp-taping-machine.html"
-                                  >Bopp Taping Machine</a
-                                >
-                              </li>
-                              <!-- /.nav-item -->
-                            </ul>
-                          </ul>
-                        </div>
-                        <!-- /.col-sm-6 -->
-                        <div class="col-sm-6 dropdown-menu-col">
-                          <h6>Elevator</h6>
-                          <ul class="nav flex-column">
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="elevator-cap-elevator.html"
-                                >Cap Elevator</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="elevator-cap-feeding-elevator.html"
-                                >Cap Feeding Elevator</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <li class="nav__item">
-                              <a
-                                class="nav__item-link"
-                                href="elevator-cap-orienting-bowl.html"
-                                >Cap Orienting Bowl</a
-                              >
-                            </li>
-                            <!-- /.nav-item -->
-                            <h6>Barrel Rinsing Machine</h6>
-                            <ul class="nav flex-column">
-                              <li class="nav__item">
-                                <a
-                                  class="nav__item-link"
-                                  href="barrel-rinsing-machine-barrel-rinsing-machine.html"
-                                  >Barrel Rinsing Machine</a
-                                >
-                              </li>
-                              <!-- /.nav-item -->
-                            </ul>
-                          </ul>
-                        </div>
-                        <!-- /.col-sm-6 -->
-                      </div>
-                      <!-- /.row -->
-                    </li>
-                    <!-- /.nav-item -->
-                  </ul>
-                  <!-- /.dropdown-menu -->
-                </li>
-                <!-- /.nav-item -->
-
-                <li class="nav__item">
-                  <a href="contacs.html" class="nav__item-link">Contacts</a>
-                </li>
-                <!-- /.nav-item -->
-              </ul>
-              <!-- /.navbar-nav -->
-            </div>
-            <!-- /.navbar-collapse -->
-            <div class="navbar-modules">
-              <ul
-                class="list-unstyled d-flex align-items-center modules__btns-list"
-              >
-                <li>
-                  <a href="#" class="module__btn module__btn-search"
-                    ><i class="fa fa-search"></i
-                  ></a>
-                </li>
-                <li class="d-none d-lg-block">
-                  <a
-                    href="request-quote.html"
-                    class="btn btn__primary btn__bordered module__btn-request"
-                  >
-                    <span>Get A Quote</span><i class="icon-arrow-right"></i>
-                  </a>
-                </li>
-                <li class="d-none d-lg-block">
-                  <div
-                    class="module__btn module__btn-phone d-flex align-items-center"
-                  >
-                    <i class="icon-phone"></i>
-                    <a href="tel:+919167799522">+919167799522</a>
-                  </div>
-                </li>
-              </ul>
-              <!-- /.modules-wrapper -->
-            </div>
-            <!-- /.navbar-modules -->
-          </div>
-          <!-- /.container -->
-        </nav>
-        <!-- /.navabr -->
-      </header>
-      <!-- /.Header -->
-
-      <!-- ========================
-       page title 
-    =========================== -->
-      <section
-        id="pageTitle"
-        class="page-title page-title-layout1 bg-overlay bg-parallax"
-      >
-        <div class="bg-img">
-          <img src="assets/images/page-titles/1.jpg" alt="background" />
-        </div>
+    <header id="header" class="header header-transparent">
+      <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-              <h1 class="pagetitle__heading">About Us</h1>
-              <p class="pagetitle__desc">
-                We produce positive results from ever-growing manufacturing
-                estates, established a corporate mandate to maintain strong
-                values.
-              </p>
-              <a href="#" class="btn btn__primary btn__hover2">
-                <i class="icon-arrow-right"></i><span>Our Services</span>
-              </a>
-            </div>
-            <!-- /.col-xl-7 -->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo.png" class="logo-light" alt="logo" />
+            <img src="assets/images/logo/logo.png" class="logo-dark" alt="logo" />
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item with-dropdown">
+                <a href="index.html" class="dropdown-toggle nav__item-link active">Home</a>
+                <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="about-us.html" class="dropdown-toggle nav__item-link">Company</a>
+                <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <a href="about-us.html" class="nav__item-link">About Us</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="why-us.html" class="nav__item-link">Why Choose Us</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="leadership-team.html" class="nav__item-link">Leadership Team</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
+                  </li>
+                  <!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="careers.html" class="nav__item-link">careers</a>
+                  </li>
+                  <!-- /.nav-item -->
+                </ul>
+                <!-- /.dropdown-menu -->
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="#" class="dropdown-toggle nav__item-link">Products</a>
+                <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                <ul class="dropdown-menu wide-dropdown-menu">
+                  <li class="nav__item">
+                    <div class="row mx-0">
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <h6>Conveyor System</h6>
+                        <ul class="nav flex-column">
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="conveyor-system-belt-conveyor.html">Belt Conveyor</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="conveyor-system-slat-conveyor.html">Slat Conveyor</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="conveyor-system-spiral_conveyor.html">Spiral Conveyor</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="conveyor-system-modular-conveyor.html">Modular Conveyor</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="conveyor-system-power-roller-conveyor.html">PowerRoller
+                              Conveyor</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="conveyor-system-gravity-roller-conveyor.html">Gravity Roller
+                              Conveyor</a>
+                          </li>
+                          <!-- /.nav-item -->
+                        </ul>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <h6>Filling Machine</h6>
+                        <ul class="nav flex-column">
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="filling-machine-barrel-filler.html">Barrel Filler</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="filling-machine-pail-filler.html">Pail Filler</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="drum-filling.html">Drum Filler</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="filling-machine-linear-filler.html">Linear Filler</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="filling-machine-rotary-filler.html">Rotary Filler</a>
+                          </li>
+                          <!-- /.nav-item -->
+                        </ul>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <h6>Capping Machine</h6>
+                        <ul class="nav flex-column">
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="capping-machine-linear-capper.html">Linear Capper</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="capping-machine-rotary-capper.html">Rotary Capper</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <h6>Lid Pressing Machine</h6>
+                          <ul class="nav flex-column">
+                            <li class="nav__item">
+                              <a class="nav__item-link" href="lid-pressing-machine-lid-pressing-machine.html">Lid
+                                Pressing Machine</a>
+                            </li>
+                            <!-- /.nav-item -->
+                          </ul>
+                          <h6>Bopp Taping Machine</h6>
+                          <ul class="nav flex-column">
+                            <li class="nav__item">
+                              <a class="nav__item-link" href="bopp-taping-machine-bopp-taping-machine.html">Bopp Taping
+                                Machine</a>
+                            </li>
+                            <!-- /.nav-item -->
+                          </ul>
+                        </ul>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <h6>Elevator</h6>
+                        <ul class="nav flex-column">
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="elevator-cap-elevator.html">Cap Elevator</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="elevator-cap-feeding-elevator.html">Cap Feeding Elevator</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <li class="nav__item">
+                            <a class="nav__item-link" href="elevator-cap-orienting-bowl.html">Cap Orienting Bowl</a>
+                          </li>
+                          <!-- /.nav-item -->
+                          <h6>Barrel Rinsing Machine</h6>
+                          <ul class="nav flex-column">
+                            <li class="nav__item">
+                              <a class="nav__item-link" href="barrel-rinsing-machine-barrel-rinsing-machine.html">Barrel
+                                Rinsing Machine</a>
+                            </li>
+                            <!-- /.nav-item -->
+                          </ul>
+                        </ul>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </li>
+                  <!-- /.nav-item -->
+                </ul>
+                <!-- /.dropdown-menu -->
+              </li>
+              <!-- /.nav-item -->
+
+              <li class="nav__item">
+                <a href="contacs.html" class="nav__item-link">Contacts</a>
+              </li>
+              <!-- /.nav-item -->
+            </ul>
+            <!-- /.navbar-nav -->
           </div>
-          <!-- /.row -->
+          <!-- /.navbar-collapse -->
+          <div class="navbar-modules">
+            <ul class="list-unstyled d-flex align-items-center modules__btns-list">
+              <li>
+                <a href="#" class="module__btn module__btn-search"><i class="fa fa-search"></i></a>
+              </li>
+              <li class="d-none d-lg-block">
+                <a href="request-quote.html" class="btn btn__primary btn__bordered module__btn-request">
+                  <span>Get A Quote</span><i class="icon-arrow-right"></i>
+                </a>
+              </li>
+              <li class="d-none d-lg-block">
+                <div class="module__btn module__btn-phone d-flex align-items-center">
+                  <i class="icon-phone"></i>
+                  <a href="tel:+919167799522">+919167799522</a>
+                </div>
+              </li>
+            </ul>
+            <!-- /.modules-wrapper -->
+          </div>
+          <!-- /.navbar-modules -->
         </div>
         <!-- /.container -->
-      </section>
-      <!-- /.page-title -->
+      </nav>
+      <!-- /.navabr -->
+    </header>
+    <!-- /.Header -->
 
-      <!-- ========================
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section id="pageTitle" class="page-title page-title-layout1 bg-overlay bg-parallax">
+      <div class="bg-img">
+        <img src="assets/images/page-titles/1.jpg" alt="background" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+            <h1 class="pagetitle__heading">About Us</h1>
+            <p class="pagetitle__desc">
+              We produce positive results from ever-growing manufacturing
+              estates, established a corporate mandate to maintain strong
+              values.
+            </p>
+            <a href="#" class="btn btn__primary btn__hover2">
+              <i class="icon-arrow-right"></i><span>Our Services</span>
+            </a>
+          </div>
+          <!-- /.col-xl-7 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.page-title -->
+
+    <!-- ========================
       About Layout 2
     =========================== -->
-      <section class="vision-mission">
-        <h2>Our Vision</h2>
-        <p>To become No. 1 Turnkey Supplier of Filling & Packaging Machinery</p>
+    <section class="vision-mission">
+      <h2>Our Vision</h2>
+      <p>To become No. 1 Turnkey Supplier of Filling & Packaging Machinery</p>
 
-        <h2>Our Mission</h2>
-        <ul>
-          <li>
-            To strengthen our presence in the Filling & Packaging Market
-            Globally and widen our Horizon by way of Application Engineering
-            Innovating for the future
-          </li>
-        </ul>
+      <h2>Our Mission</h2>
+      <ul>
+        <li>
+          To strengthen our presence in the Filling & Packaging Market
+          Globally and widen our Horizon by way of Application Engineering
+          Innovating for the future
+        </li>
+      </ul>
 
-        <h2>Our Values</h2>
-        <ul>
-          <li>
-            Our people are our enduring advantage. We work in team keeping
-            various requirements of services to our valuable customers.Our
-            reputation is indivisible.
-          </li>
-        </ul>
-      </section>
-      <section class="expertise-section">
-        <div class="expertise-container">
-            <div class="expertise-image">
-                <img src="assets/images/about/champ.png" alt="Expertise Image">
-            </div>
-            <div class="expertise-content">
-                <h2>Expertise and Capabilities</h2>
-                <p class="demou">Under the visionary leadership of Mr. Jugal K. Goyanka, FILLPACK has grown into a trusted name in the filling and packaging industry. His deep industry experience and strategic insight have driven the company to supply and commission numerous filling and packaging lines across various sectors. With highly professional techno-commercial skills, Mr. Goyanka’s leadership has been instrumental in delivering solutions that are not only innovative but also perfectly tailored to the specific requirements of our customers.</p>
-                <ul>
-                    <li><strong class="strong12">Extensive experience</strong> in the filling & packaging industry.</li>
-                    <li><strong class="strong12">Proven track record</strong> working with industry giants.</li>
-                    <li><strong class="strong12">Strategic partnerships</strong> with both foreign and Indian machinery manufacturers.</li>
-                    <li><strong class="strong12">Comprehensive support services</strong>, including equipment selection, after-sales service, and stocking of essential spare parts.</li>
-                    <li><strong class="strong12">Consistently delivers projects</strong> on a turnkey basis, ensuring seamless integration from design to final commissioning.</li>
-                </ul>
-            </div>
-        </div>
+      <h2>Our Values</h2>
+      <ul>
+        <li>
+          Our people are our enduring advantage. We work in team keeping
+          various requirements of services to our valuable customers.Our
+          reputation is indivisible.
+        </li>
+      </ul>
     </section>
-    
     <section class="expertise-section">
-        <div class="expertise-container reverse">
-            <div class="expertise-image">
-                <img src="assets/images/about/checking.png" alt="Operational Excellence Image">
-            </div>
-            <div class="expertise-content">
-                <h2>Operational Excellence</h2>
-                <p class="demou">At FILLPACK, our commitment to operational excellence is demonstrated through an end-to-end approach in machinery development. Our process covers everything from initial conceptual design and precision engineering to thorough inspection and final testing before dispatch. With a dedicated team of 15 highly skilled engineers, we manage complete installation, commissioning, and ongoing after-sales support in-house—minimizing dependency on external suppliers and ensuring prompt service and maintenance for every project.</p>
-                <ul>
-                    <li><strong class="strong12">Comprehensive manufacturing process:</strong> design, inspection, and final trial.</li>
-                    <li><strong class="strong12">A dedicated, self-reliant team</strong> of 15 experienced engineers.</li>
-                    <li><strong class="strong12">In-house installation, commissioning, and maintenance services.</strong></li>
-                    <li><strong class="strong12">Focus on delivering complete turnkey solutions</strong> tailored to customer needs.</li>
-                    <li><strong class="strong12">Continuous commitment</strong> to quality, reliability, and innovation.</li>
-                </ul>
-            </div>
+      <div class="expertise-container">
+        <div class="expertise-image">
+          <img src="assets/images/about/champ.png" alt="Expertise Image">
         </div>
+        <div class="expertise-content">
+          <h2>Expertise and Capabilities</h2>
+          <p class="demou">Under the visionary leadership of Mr. Jugal K. Goyanka, FILLPACK has grown into a trusted
+            name in the filling and packaging industry. His deep industry experience and strategic insight have driven
+            the company to supply and commission numerous filling and packaging lines across various sectors. With
+            highly professional techno-commercial skills, Mr. Goyanka’s leadership has been instrumental in delivering
+            solutions that are not only innovative but also perfectly tailored to the specific requirements of our
+            customers.</p>
+          <ul>
+            <li><strong class="strong12">Extensive experience</strong> in the filling & packaging industry.</li>
+            <li><strong class="strong12">Proven track record</strong> working with industry giants.</li>
+            <li><strong class="strong12">Strategic partnerships</strong> with both foreign and Indian machinery
+              manufacturers.</li>
+            <li><strong class="strong12">Comprehensive support services</strong>, including equipment selection,
+              after-sales service, and stocking of essential spare parts.</li>
+            <li><strong class="strong12">Consistently delivers projects</strong> on a turnkey basis, ensuring seamless
+              integration from design to final commissioning.</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    
-      <!-- =====================
+
+    <section class="expertise-section">
+      <div class="expertise-container reverse">
+        <div class="expertise-image">
+          <img src="assets/images/about/checking.png" alt="Operational Excellence Image">
+        </div>
+        <div class="expertise-content">
+          <h2>Operational Excellence</h2>
+          <p class="demou">At FILLPACK, our commitment to operational excellence is demonstrated through an end-to-end
+            approach in machinery development. Our process covers everything from initial conceptual design and
+            precision engineering to thorough inspection and final testing before dispatch. With a dedicated team of 15
+            highly skilled engineers, we manage complete installation, commissioning, and ongoing after-sales support
+            in-house—minimizing dependency on external suppliers and ensuring prompt service and maintenance for every
+            project.</p>
+          <ul>
+            <li><strong class="strong12">Comprehensive manufacturing process:</strong> design, inspection, and final
+              trial.</li>
+            <li><strong class="strong12">A dedicated, self-reliant team</strong> of 15 experienced engineers.</li>
+            <li><strong class="strong12">In-house installation, commissioning, and maintenance services.</strong></li>
+            <li><strong class="strong12">Focus on delivering complete turnkey solutions</strong> tailored to customer
+              needs.</li>
+            <li><strong class="strong12">Continuous commitment</strong> to quality, reliability, and innovation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
       Director Section
       ======================== -->
 
-      <section class="director-section">
-        <h2>Meet Our Directors</h2>
-        <div class="directors-container">
-            <!-- Director 1 -->
-            <div class="director-card">
-                <img src="assets/images/director/Director.png" alt="Director 1" class="director-photo">
-                <h3>Mr. Jugal K. Goyanka</h3>
-                <p class="position"><i class="fas fa-user-tie"></i> Director</p>
-                <div class="director-bio">
-                    <p>
-                        <strong>Mr. Jugal K. Goyanka</strong> is the visionary leader and sole director
-                        of J.K. Fillpack Engineers Pvt. Ltd. With extensive experience in the filling 
-                        and packaging industry, he has played a pivotal role in steering the company 
-                        towards innovative and turnkey machinery solutions.
-                    </p>
-                    <div class="bio-highlights">
-                        <div class="highlight"><i class=""></i> <strong>Extensive Industry Expertise:</strong> Decades of experience in the filling and packaging sector.</div>
-                        <div class="highlight"><i class="fas fa-user-cog"></i> <strong>Proven Leadership:</strong> Successfully led major companies, setting high standards in manufacturing excellence.</div>
-                        <div class="highlight"><i class="fas fa-lightbulb"></i> <strong>Innovative Vision:</strong> Pioneered turnkey projects that seamlessly integrate design, production, and after-sales service.</div>
-                        <div class="highlight"><i class="fas fa-award"></i> <strong>Commitment to Quality:</strong> Dedicated to delivering cutting-edge, reliable machinery that meets the exacting needs of global industries.</div>
-                    </div>
-                </div>
+    <section class="director-section">
+      <h2>Meet Our Directors</h2>
+      <div class="directors-container">
+        <!-- Director 1 -->
+        <div class="director-card">
+          <img src="assets/images/director/Director.png" alt="Director 1" class="director-photo">
+          <h3>Mr. Jugal K. Goyanka</h3>
+          <p class="position"><i class="fas fa-user-tie"></i> Director</p>
+          <div class="director-bio">
+            <p>
+              <strong>Mr. Jugal K. Goyanka</strong> is the visionary leader and sole director
+              of J.K. Fillpack Engineers Pvt. Ltd. With extensive experience in the filling
+              and packaging industry, he has played a pivotal role in steering the company
+              towards innovative and turnkey machinery solutions.
+            </p>
+            <div class="bio-highlights">
+              <div class="highlight"><i class=""></i> <strong>Extensive Industry Expertise:</strong> Decades of
+                experience in the filling and packaging sector.</div>
+              <div class="highlight"><i class="fas fa-user-cog"></i> <strong>Proven Leadership:</strong> Successfully
+                led major companies, setting high standards in manufacturing excellence.</div>
+              <div class="highlight"><i class="fas fa-lightbulb"></i> <strong>Innovative Vision:</strong> Pioneered
+                turnkey projects that seamlessly integrate design, production, and after-sales service.</div>
+              <div class="highlight"><i class="fas fa-award"></i> <strong>Commitment to Quality:</strong> Dedicated to
+                delivering cutting-edge, reliable machinery that meets the exacting needs of global industries.</div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    
-      <script>
-        function toggleBio(id) {
-          var bio = document.getElementById("bio-" + id);
-          bio.style.display =
-            bio.style.display === "none" || bio.style.display === ""
-              ? "block"
-              : "none";
-        }
-      </script>
 
-      <!-- ========================= 
+    <script>
+      function toggleBio(id) {
+        var bio = document.getElementById("bio-" + id);
+        bio.style.display =
+          bio.style.display === "none" || bio.style.display === ""
+            ? "block"
+            : "none";
+      }
+    </script>
+
+    <!-- ========================= 
          Banner layout 1
     =========================  -->
 
-      <!-- =========================
+    <!-- =========================
       portfolio carousel
       =========================== -->
-      <section id="portfolioCarousel" class="portfolio-carousel pt-120 pb-90">
-        <div class="container">
-          <div class="row heading heading-2 mb-40">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <span class="heading__subtitle">Explore Recent Works</span>
-            </div>
-            <!-- /.col-lg-12 -->
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <h2 class="heading__title">
-                Providing Innovative and Sustainable Solutions.
-              </h2>
-            </div>
-            <!-- /heading -->
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <p class="heading__desc">
-                Koira has been building relationships and projects that last.
-                Serving an impressive list of long-term clients with experience
-                and expertise in multiple industries, recognized as one of the
-                World's leading Corporation!
-              </p>
-            </div>
-            <!-- /heading -->
+    <section id="portfolioCarousel" class="portfolio-carousel pt-120 pb-90">
+      <div class="container">
+        <div class="row heading heading-2 mb-40">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <span class="heading__subtitle">Explore Recent Works</span>
           </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <div
-                class="carousel owl-carousel carousel-arrows"
-                data-slide="3"
-                data-slide-md="2"
-                data-slide-sm="1"
-                data-autoplay="false"
-                data-nav="true"
-                data-dots="true"
-                data-space="30"
-                data-loop="true"
-                data-speed="800"
-              >
-                <div class="portfolio-item">
-                  <div class="portfolio__img">
-                    <img
-                      src="assets/images/case-studies/1.jpg"
-                      alt="portfolio img"
-                    />
-                  </div>
-                  <!-- /.portfolio-img -->
-                  <div class="portfolio__content">
-                    <h4 class="portfolio__title">
-                      <a href="#">Floride Chemicals Factory</a>
-                    </h4>
-                    <div class="portfolio__cat">
-                      <a href="#">Chemicals</a><a href="#">oil & Gas</a>
-                    </div>
-                    <!-- /.portfolio-cat -->
-                    <div class="divider__line divider__lg"></div>
-                    <p class="portfolio__desc">
-                      We understand that data is the greatest asset when it
-                      comes to analyzing and optimizing your supply chain
-                      performance.
-                    </p>
-                    <a href="#" class="btn btn__secondary btn__link">
-                      <span>Explore More</span><i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-content -->
-                </div>
-                <!-- /.portfolio-item -->
-                <div class="portfolio-item">
-                  <div class="portfolio__img">
-                    <img
-                      src="assets/images/case-studies/2.jpg"
-                      alt="portfolio img"
-                    />
-                  </div>
-                  <!-- /.portfolio-img -->
-                  <div class="portfolio__content">
-                    <h4 class="portfolio__title">
-                      <a href="#">Highway Energy Station</a>
-                    </h4>
-                    <div class="portfolio__cat">
-                      <a href="#">Construction</a><a href="#">Energy</a>
-                    </div>
-                    <!-- /.portfolio-cat -->
-                    <div class="divider__line divider__lg"></div>
-                    <p class="portfolio__desc">
-                      Cost savings is crucial, innovative technology minimizes
-                      your overall spend by utilizing an extensive
-                      consolidation.
-                    </p>
-                    <a href="#" class="btn btn__secondary btn__link">
-                      <span>Explore More</span><i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-content -->
-                </div>
-                <!-- /.portfolio-item -->
-                <div class="portfolio-item">
-                  <div class="portfolio__img">
-                    <img
-                      src="assets/images/case-studies/3.jpg"
-                      alt="portfolio img"
-                    />
-                  </div>
-                  <!-- /.portfolio-img -->
-                  <div class="portfolio__content">
-                    <h4 class="portfolio__title">
-                      <a href="#">Villy Manufacturing Inc</a>
-                    </h4>
-                    <div class="portfolio__cat">
-                      <a href="#">Engineering</a><a href="#">Auto</a>
-                    </div>
-                    <!-- /.portfolio-cat -->
-                    <div class="divider__line divider__lg"></div>
-                    <p class="portfolio__desc">
-                      Our Group has been building relationships and portfolio
-                      that last. Serving a list of long-term clients with
-                      experience.
-                    </p>
-                    <a href="#" class="btn btn__secondary btn__link">
-                      <span>Explore More</span><i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-content -->
-                </div>
-                <!-- /.portfolio-item -->
-                <div class="portfolio-item">
-                  <div class="portfolio__img">
-                    <img
-                      src="assets/images/case-studies/4.jpg"
-                      alt="portfolio img"
-                    />
-                  </div>
-                  <!-- /.portfolio-img -->
-                  <div class="portfolio__content">
-                    <h4 class="portfolio__title">
-                      <a href="#">Regulatory Complian Seminar</a>
-                    </h4>
-                    <div class="portfolio__cat">
-                      <a href="#">Construction</a><a href="#">Engineering</a>
-                    </div>
-                    <!-- /.portfolio-cat -->
-                    <div class="divider__line divider__lg"></div>
-                    <p class="portfolio__desc">
-                      We understand that data is the greatest asset when it
-                      comes to analyzing and optimizing your supply chain
-                      performance.
-                    </p>
-                    <a href="#" class="btn btn__secondary btn__link">
-                      <span>Explore More</span><i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-content -->
-                </div>
-                <!-- /.portfolio-item -->
-                <div class="portfolio-item">
-                  <div class="portfolio__img">
-                    <img
-                      src="assets/images/case-studies/5.jpg"
-                      alt="portfolio img"
-                    />
-                  </div>
-                  <!-- /.portfolio-img -->
-                  <div class="portfolio__content">
-                    <h4 class="portfolio__title">
-                      <a href="#">Documents & Electronic Data</a>
-                    </h4>
-                    <div class="portfolio__cat">
-                      <a href="#">Chemicals</a><a href="#">oil & Gas</a>
-                    </div>
-                    <!-- /.portfolio-cat -->
-                    <div class="divider__line divider__lg"></div>
-                    <p class="portfolio__desc">
-                      Cost savings is crucial, innovative technology minimizes
-                      your overall spend by utilizing an extensive
-                      consolidation.
-                    </p>
-                    <a href="#" class="btn btn__secondary btn__link">
-                      <span>Explore More</span><i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-content -->
-                </div>
-                <!-- /.portfolio-item -->
-                <div class="portfolio-item">
-                  <div class="portfolio__img">
-                    <img
-                      src="assets/images/case-studies/6.jpg"
-                      alt="portfolio img"
-                    />
-                  </div>
-                  <!-- /.portfolio-img -->
-                  <div class="portfolio__content">
-                    <h4 class="portfolio__title">
-                      <a href="#">Floride Chemicals Factory</a>
-                    </h4>
-                    <div class="portfolio__cat">
-                      <a href="#">Chemicals</a><a href="#">oil & Gas</a>
-                    </div>
-                    <!-- /.portfolio-cat -->
-                    <div class="divider__line divider__lg"></div>
-                    <p class="portfolio__desc">
-                      We understand that data is the greatest asset when it
-                      comes to analyzing and optimizing your supply chain
-                      performance.
-                    </p>
-                    <a href="#" class="btn btn__secondary btn__link">
-                      <span>Explore More</span><i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                  <!-- /.portfolio-content -->
-                </div>
-                <!-- /.portfolio-item -->
-              </div>
-              <!-- /.carousel -->
-            </div>
-            <!-- /.col-lg-12 -->
+          <!-- /.col-lg-12 -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <h2 class="heading__title">
+              Providing Innovative and Sustainable Solutions.
+            </h2>
           </div>
-          <!-- /.row -->
+          <!-- /heading -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <p class="heading__desc">
+              Koira has been building relationships and projects that last.
+              Serving an impressive list of long-term clients with experience
+              and expertise in multiple industries, recognized as one of the
+              World's leading Corporation!
+            </p>
+          </div>
+          <!-- /heading -->
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.portfolio carousel -->
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="carousel owl-carousel carousel-arrows" data-slide="3" data-slide-md="2" data-slide-sm="1"
+              data-autoplay="false" data-nav="true" data-dots="true" data-space="30" data-loop="true" data-speed="800">
+              <div class="portfolio-item">
+                <div class="portfolio__img">
+                  <img src="assets/images/case-studies/1.jpg" alt="portfolio img" />
+                </div>
+                <!-- /.portfolio-img -->
+                <div class="portfolio__content">
+                  <h4 class="portfolio__title">
+                    <a href="#">Floride Chemicals Factory</a>
+                  </h4>
+                  <div class="portfolio__cat">
+                    <a href="#">Chemicals</a><a href="#">oil & Gas</a>
+                  </div>
+                  <!-- /.portfolio-cat -->
+                  <div class="divider__line divider__lg"></div>
+                  <p class="portfolio__desc">
+                    We understand that data is the greatest asset when it
+                    comes to analyzing and optimizing your supply chain
+                    performance.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Explore More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div>
+                <!-- /.portfolio-content -->
+              </div>
+              <!-- /.portfolio-item -->
+              <div class="portfolio-item">
+                <div class="portfolio__img">
+                  <img src="assets/images/case-studies/2.jpg" alt="portfolio img" />
+                </div>
+                <!-- /.portfolio-img -->
+                <div class="portfolio__content">
+                  <h4 class="portfolio__title">
+                    <a href="#">Highway Energy Station</a>
+                  </h4>
+                  <div class="portfolio__cat">
+                    <a href="#">Construction</a><a href="#">Energy</a>
+                  </div>
+                  <!-- /.portfolio-cat -->
+                  <div class="divider__line divider__lg"></div>
+                  <p class="portfolio__desc">
+                    Cost savings is crucial, innovative technology minimizes
+                    your overall spend by utilizing an extensive
+                    consolidation.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Explore More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div>
+                <!-- /.portfolio-content -->
+              </div>
+              <!-- /.portfolio-item -->
+              <div class="portfolio-item">
+                <div class="portfolio__img">
+                  <img src="assets/images/case-studies/3.jpg" alt="portfolio img" />
+                </div>
+                <!-- /.portfolio-img -->
+                <div class="portfolio__content">
+                  <h4 class="portfolio__title">
+                    <a href="#">Villy Manufacturing Inc</a>
+                  </h4>
+                  <div class="portfolio__cat">
+                    <a href="#">Engineering</a><a href="#">Auto</a>
+                  </div>
+                  <!-- /.portfolio-cat -->
+                  <div class="divider__line divider__lg"></div>
+                  <p class="portfolio__desc">
+                    Our Group has been building relationships and portfolio
+                    that last. Serving a list of long-term clients with
+                    experience.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Explore More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div>
+                <!-- /.portfolio-content -->
+              </div>
+              <!-- /.portfolio-item -->
+              <div class="portfolio-item">
+                <div class="portfolio__img">
+                  <img src="assets/images/case-studies/4.jpg" alt="portfolio img" />
+                </div>
+                <!-- /.portfolio-img -->
+                <div class="portfolio__content">
+                  <h4 class="portfolio__title">
+                    <a href="#">Regulatory Complian Seminar</a>
+                  </h4>
+                  <div class="portfolio__cat">
+                    <a href="#">Construction</a><a href="#">Engineering</a>
+                  </div>
+                  <!-- /.portfolio-cat -->
+                  <div class="divider__line divider__lg"></div>
+                  <p class="portfolio__desc">
+                    We understand that data is the greatest asset when it
+                    comes to analyzing and optimizing your supply chain
+                    performance.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Explore More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div>
+                <!-- /.portfolio-content -->
+              </div>
+              <!-- /.portfolio-item -->
+              <div class="portfolio-item">
+                <div class="portfolio__img">
+                  <img src="assets/images/case-studies/5.jpg" alt="portfolio img" />
+                </div>
+                <!-- /.portfolio-img -->
+                <div class="portfolio__content">
+                  <h4 class="portfolio__title">
+                    <a href="#">Documents & Electronic Data</a>
+                  </h4>
+                  <div class="portfolio__cat">
+                    <a href="#">Chemicals</a><a href="#">oil & Gas</a>
+                  </div>
+                  <!-- /.portfolio-cat -->
+                  <div class="divider__line divider__lg"></div>
+                  <p class="portfolio__desc">
+                    Cost savings is crucial, innovative technology minimizes
+                    your overall spend by utilizing an extensive
+                    consolidation.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Explore More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div>
+                <!-- /.portfolio-content -->
+              </div>
+              <!-- /.portfolio-item -->
+              <div class="portfolio-item">
+                <div class="portfolio__img">
+                  <img src="assets/images/case-studies/6.jpg" alt="portfolio img" />
+                </div>
+                <!-- /.portfolio-img -->
+                <div class="portfolio__content">
+                  <h4 class="portfolio__title">
+                    <a href="#">Floride Chemicals Factory</a>
+                  </h4>
+                  <div class="portfolio__cat">
+                    <a href="#">Chemicals</a><a href="#">oil & Gas</a>
+                  </div>
+                  <!-- /.portfolio-cat -->
+                  <div class="divider__line divider__lg"></div>
+                  <p class="portfolio__desc">
+                    We understand that data is the greatest asset when it
+                    comes to analyzing and optimizing your supply chain
+                    performance.
+                  </p>
+                  <a href="#" class="btn btn__secondary btn__link">
+                    <span>Explore More</span><i class="icon-arrow-right"></i>
+                  </a>
+                </div>
+                <!-- /.portfolio-content -->
+              </div>
+              <!-- /.portfolio-item -->
+            </div>
+            <!-- /.carousel -->
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.portfolio carousel -->
 
-      <!-- =====================
+    <!-- =====================
        Clients 
     ======================== -->
-      <section id="clients" class="clients border-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <div
-                class="carousel owl-carousel"
-                data-slide="6"
-                data-slide-md="4"
-                data-slide-sm="2"
-                data-autoplay="true"
-                data-nav="false"
-                data-dots="false"
-                data-space="20"
-                data-loop="true"
-                data-speed="700"
-              >
-                <div class="client">
-                  <a href="#"
-                    ><img src="assets/images/clients/1.png" alt="client"
-                  /></a>
-                </div>
-                <!-- /.client -->
-                <div class="client">
-                  <a href="#"
-                    ><img src="assets/images/clients/2.png" alt="client"
-                  /></a>
-                </div>
-                <!-- /.client -->
-                <div class="client">
-                  <a href="#"
-                    ><img src="assets/images/clients/3.png" alt="client"
-                  /></a>
-                </div>
-                <!-- /.client -->
-                <div class="client">
-                  <a href="#"
-                    ><img src="assets/images/clients/4.png" alt="client"
-                  /></a>
-                </div>
-                <!-- /.client -->
-                <div class="client">
-                  <a href="#"
-                    ><img src="assets/images/clients/5.png" alt="client"
-                  /></a>
-                </div>
-                <!-- /.client -->
-                <div class="client">
-                  <a href="#"
-                    ><img src="assets/images/clients/6.png" alt="client"
-                  /></a>
-                </div>
-                <!-- /.client -->
+    <section id="clients" class="clients border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="carousel owl-carousel" data-slide="6" data-slide-md="4" data-slide-sm="2" data-autoplay="true"
+              data-nav="false" data-dots="false" data-space="20" data-loop="true" data-speed="700">
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/1.png" alt="client" /></a>
               </div>
-              <!-- /.carousel -->
+              <!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/2.png" alt="client" /></a>
+              </div>
+              <!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/3.png" alt="client" /></a>
+              </div>
+              <!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/4.png" alt="client" /></a>
+              </div>
+              <!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/5.png" alt="client" /></a>
+              </div>
+              <!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/6.png" alt="client" /></a>
+              </div>
+              <!-- /.client -->
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.carousel -->
           </div>
-          <!-- /.row -->
+          <!-- /.col-lg-12 -->
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.clients -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.clients -->
 
-      <!-- =========================
+    <!-- =========================
         Banner layout 2
     =========================== -->
-      <section
-        id="bannerLayout2"
-        class="banner banner-layout2 bg-overlay bg-overlay-theme pb-0"
-      >
-        <div class="bg-img">
-          <img src="assets/images/banners/4.jpg" alt="background" />
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-5">
-              <div class="heading heading-4 heading-white mb-70">
-                <span class="heading__subtitle"
-                  >Dedicated Customer Teams & An Agile Services</span
-                >
-                <h3 class="heading__title">
-                  Serving Impressive List Of Long Term Clients!
-                </h3>
-                <p class="heading__desc">
-                  Our worldwide presence ensures timeliness, cost efficiency and
-                  compliance adherence required to ensure your timelines are
-                  met. Serving with experience aNd expertise in multiple
-                  industries, as one of the World's leading Corporation! .
-                </p>
-              </div>
-              <!-- /.heading -->
-              <div class="video__btn video__btn-white mb-70">
-                <a
-                  class="popup-video"
-                  href="https://www.youtube.com/watch?4=&v=TKnufs85hXk"
-                >
-                  <div class="video__player">
-                    <span class="video__player-animation"></span>
-                    <span
-                      class="video__player-animation video__player-animation-2"
-                    ></span>
-                    <span
-                      class="video__player-animation video__player-animation-3"
-                    ></span>
-                    <i class="fa fa-play"></i>
-                  </div>
-                  <span class="video__player-title"
-                    >Watch Our Presentation!</span
-                  >
-                </a>
-              </div>
-              <!-- /.video -->
+    <section id="bannerLayout2" class="banner banner-layout2 bg-overlay bg-overlay-theme pb-0">
+      <div class="bg-img">
+        <img src="assets/images/banners/4.jpg" alt="background" />
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="heading heading-4 heading-white mb-70">
+              <span class="heading__subtitle">Dedicated Customer Teams & An Agile Services</span>
+              <h3 class="heading__title">
+                Serving Impressive List Of Long Term Clients!
+              </h3>
+              <p class="heading__desc">
+                Our worldwide presence ensures timeliness, cost efficiency and
+                compliance adherence required to ensure your timelines are
+                met. Serving with experience aNd expertise in multiple
+                industries, as one of the World's leading Corporation! .
+              </p>
             </div>
-            <!-- /.col-lg-5 -->
-            <div class="col-sm-12 col-md-12 col-lg-7">
-              <div class="contact__panel-wrap">
-                <div class="contact__panel contact__panel-layout2">
-                  <form class="contact__form-panel">
-                    <div class="row">
-                      <div class="col-sm-12 contact__form-panel-header">
-                        <h4>Request A Quote</h4>
-                        <p>
-                          Complete control over products allows us to ensure our
-                          customers receive the best quality prices and service.
-                        </p>
-                      </div>
-                      <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Name"
-                          />
-                        </div>
-                      </div>
-                      <!-- /.col-lg-6 -->
-                      <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Email"
-                          />
-                        </div>
-                      </div>
-                      <!-- /.col-lg-6 -->
-                      <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Phone"
-                          />
-                        </div>
-                      </div>
-                      <!-- /.col-lg-6 -->
-                      <div class="col-sm-6 col-md-6 col-lg-6">
-                        <div class="form-group">
-                          <select class="form-control form-group w-100">
-                            <option>Select Your Industry</option>
-                            <option>Industry 1</option>
-                            <option>Industry 2</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="form-group">
-                          <textarea
-                            class="form-control"
-                            placeholder="Additional Details!"
-                          ></textarea>
-                        </div>
-                      </div>
-                      <!-- /.col-lg-12 -->
-                      <div class="col-sm-12 col-md-12 col-lg-12">
-                        <button
-                          type="submit"
-                          class="btn btn__secondary btn__block"
-                        >
-                          <span>Submit Request</span
-                          ><i class="icon-arrow-right"></i>
-                        </button>
-                      </div>
-                      <!-- /.col-lg-12 -->
+            <!-- /.heading -->
+            <div class="video__btn video__btn-white mb-70">
+              <a class="popup-video" href="https://www.youtube.com/watch?4=&v=TKnufs85hXk">
+                <div class="video__player">
+                  <span class="video__player-animation"></span>
+                  <span class="video__player-animation video__player-animation-2"></span>
+                  <span class="video__player-animation video__player-animation-3"></span>
+                  <i class="fa fa-play"></i>
+                </div>
+                <span class="video__player-title">Watch Our Presentation!</span>
+              </a>
+            </div>
+            <!-- /.video -->
+          </div>
+          <!-- /.col-lg-5 -->
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="contact__panel-wrap">
+              <div class="contact__panel contact__panel-layout2">
+                <form class="contact__form-panel">
+                  <div class="row">
+                    <div class="col-sm-12 contact__form-panel-header">
+                      <h4>Request A Quote</h4>
+                      <p>
+                        Complete control over products allows us to ensure our
+                        customers receive the best quality prices and service.
+                      </p>
                     </div>
-                    <!-- /.row -->
-                  </form>
-                </div>
-                <!-- /.contact__panel -->
-              </div>
-            </div>
-            <!-- /.col-lg-7 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /. Banner layout 2 -->
-
-      <!-- ========================= 
-       Testimonials layout 1
-    =========================  -->
-      <section
-        id="testimonialsLayout1"
-        class="testimonials testimonials-layout1"
-      >
-        <div class="bg-img">
-          <img src="assets/images/backgrounds/1.jpg" alt="background" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <div class="heading mb-50">
-                <h2 class="heading__title mb-0">What Our Clients Say!</h2>
-              </div>
-              <!-- /.heading -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-12 col-sm-1 col-md-1 col-lg-1">
-              <img
-                src="assets/images/testimonials/quote-icon.png"
-                alt="quote-icon"
-                class="mb-20"
-              />
-            </div>
-            <!-- /.col-lg-1 -->
-            <div class="co-12 col-sm-11 col-md-11 col-lg-11">
-              <div
-                class="owl-carousel thumbs-carousel carousel-arrows"
-                data-slider-id="1"
-                data-nav="true"
-                data-dots="false"
-              >
-                <!-- Testimonial #1 -->
-                <div class="testimonial-item">
-                  <div class="testimonial__content">
-                    <p class="testimonial__desc">
-                      They are the best of the best, and expertly trained team
-                      members who take the extra step and go the extra mile, all
-                      to fulfill our dedicated promise to deliver innovative and
-                      dynamic solutions to our customers to fit the needs of a
-                      rapidly changing global environment which was perfect for
-                      our needs!!.
-                    </p>
-                  </div>
-                  <!-- /.testimonial-content -->
-                </div>
-                <!-- /. testimonial-item -->
-                <!-- Testimonial #2 -->
-                <div class="testimonial-item">
-                  <div class="testimonial__content">
-                    <p class="testimonial__desc">
-                      They are the best of the best, and expertly trained team
-                      members who take the extra step and go the extra mile, all
-                      to fulfill our dedicated promise to deliver innovative and
-                      dynamic solutions to our customers to fit the needs of a
-                      rapidly changing global environment which was perfect for
-                      our needs!!.
-                    </p>
-                  </div>
-                  <!-- /.testimonial-content -->
-                </div>
-                <!-- /. testimonial-item -->
-                <!-- Testimonial #3 -->
-                <div class="testimonial-item">
-                  <div class="testimonial__content">
-                    <p class="testimonial__desc">
-                      They are the best of the best, and expertly trained team
-                      members who take the extra step and go the extra mile, all
-                      to fulfill our dedicated promise to deliver innovative and
-                      dynamic solutions to our customers to fit the needs of a
-                      rapidly changing global environment which was perfect for
-                      our needs!!.
-                    </p>
-                  </div>
-                  <!-- /.testimonial-content -->
-                </div>
-                <!-- /. testimonial-item -->
-              </div>
-              <div class="owl-thumbs" data-slider-id="1">
-                <button class="owl-thumb-item">
-                  <span class="testimonial__thumb">
-                    <img
-                      src="assets/images/testimonials/thumbs/1.jpg"
-                      alt="author thumb"
-                    /> </span
-                  ><!-- /.testimonial-thumb -->
-                  <span class="testimonial__meta">
-                    <span class="testimonial__meta-title">John Peter</span>
-                    <span class="testimonial__meta-desc"
-                      >7oroof Inc</span
-                    > </span
-                  ><!-- /.testimonial-meta -->
-                </button>
-                <button class="owl-thumb-item">
-                  <span class="testimonial__thumb">
-                    <img
-                      src="assets/images/testimonials/thumbs/2.jpg"
-                      alt="author thumb"
-                    /> </span
-                  ><!-- /.testimonial-thumb -->
-                  <span class="testimonial__meta">
-                    <span class="testimonial__meta-title">Sami Wade</span>
-                    <span class="testimonial__meta-desc">Trustry</span> </span
-                  ><!-- /.testimonial-meta -->
-                </button>
-                <button class="owl-thumb-item">
-                  <span class="testimonial__thumb">
-                    <img
-                      src="assets/images/testimonials/thumbs/3.jpg"
-                      alt="author thumb"
-                    /> </span
-                  ><!-- /.testimonial-thumb -->
-                  <span class="testimonial__meta">
-                    <span class="testimonial__meta-title">Martin Hope</span>
-                    <span class="testimonial__meta-desc">Industech</span> </span
-                  ><!-- /.testimonial-meta -->
-                </button>
-              </div>
-              <!-- /.owl-thumbs -->
-            </div>
-            <!-- /.col-lg-12 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.testimonials 1 -->
-
-      <!-- ========================
-      Footer
-    ========================== -->
-      <footer id="footer" class="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div
-                class="col-sm-12 col-md-12 col-lg-4 col-xl-3 footer__widget footer__widget-about"
-              >
-                <h6 class="footer__widget-title">Quick Contact</h6>
-                <div class="footer__widget-content">
-                  <p class="color-gray">
-                    If you have any questions or need help, feel free to contact
-                    with our team.
-                  </p>
-                  <p class="footer__contact-phone">
-                    <i class="icon-phone"></i>
-                    <a href="tel:5565454117">55 654 54117</a>
-                  </p>
-                  <p>
-                    2307 Beverley Rd Brooklyn, New York <br />11226 United
-                    States.
-                  </p>
-                  <ul class="social__icons">
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                  </ul>
-                  <!-- /.social-icons -->
-                </div>
-              </div>
-              <!-- /.col-xl-3 -->
-              <div
-                class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 offset-xl-1 footer__widget footer__widget-nav"
-              >
-                <h6 class="footer__widget-title">Company</h6>
-                <div class="footer__widget-content">
-                  <nav>
-                    <ul class="list-unstyled">
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Meet Our Team</a></li>
-                      <li><a href="#">News & Media</a></li>
-                      <li><a href="#">Case Studies</a></li>
-                      <li><a href="#">Contacts</a></li>
-                      <li><a href="#">Careers</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <!-- /.footer-widget-content -->
-              </div>
-              <!-- /.col-xl-2 -->
-              <div
-                class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 footer__widget footer__widget-nav"
-              >
-                <h6 class="footer__widget-title">Industries</h6>
-                <div class="footer__widget-content">
-                  <nav>
-                    <ul class="list-unstyled">
-                      <li><a href="#">Retail & Consumer</a></li>
-                      <li><a href="#">Sciences & Healthcare</a></li>
-                      <li><a href="#">Industrial & Chemical</a></li>
-                      <li><a href="#">Power Generation</a></li>
-                      <li><a href="#">Food & Beverage</a></li>
-                      <li><a href="#">Oil & Gas</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <!-- /.footer-widget-content -->
-              </div>
-              <!-- /.col-xl-2 -->
-              <div
-                class="col-sm-12 col-md-10 col-lg-6 col-xl-4 footer__widget footer__widget-newsletter"
-              >
-                <div class="footer__widget-content">
-                  <p>
-                    Sign up for industry alerts, our latest news, thoughts, and
-                    insights from Koira.
-                  </p>
-                  <form class="widget__newsletter-form">
-                    <div class="form-group mb-0">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Your Email Address"
-                      />
-                      <button
-                        type="submit"
-                        class="btn btn__primary btn__hover2"
-                      >
-                        <i class="icon-arrow-right"></i>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" />
+                      </div>
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" />
+                      </div>
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone" />
+                      </div>
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                      <div class="form-group">
+                        <select class="form-control form-group w-100">
+                          <option>Select Your Industry</option>
+                          <option>Industry 1</option>
+                          <option>Industry 2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <div class="form-group">
+                        <textarea class="form-control" placeholder="Additional Details!"></textarea>
+                      </div>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <button type="submit" class="btn btn__secondary btn__block">
+                        <span>Submit Request</span><i class="icon-arrow-right"></i>
                       </button>
                     </div>
-                  </form>
-                </div>
-                <!-- /.footer-widget-content -->
-                <p class="text-right fz-13 mt-20 mb-0">
-                  You may withdraw your consent at any time!
-                </p>
+                    <!-- /.col-lg-12 -->
+                  </div>
+                  <!-- /.row -->
+                </form>
               </div>
-              <!-- /.col-xl-4 -->
+              <!-- /.contact__panel -->
             </div>
-            <!-- /.row -->
           </div>
-          <!-- /.container -->
+          <!-- /.col-lg-7 -->
         </div>
-        <!-- /.footer-top -->
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-3 col-lg-3">
-                <img src="assets/images/logo/logo-footer.png" alt="logo" />
-              </div>
-              <!-- /.col-lg-3 -->
-              <div class="col-sm-12 col-md-9 col-lg-9 text-right">
-                <div class="footer__copyright">
-                  <nav>
-                    <ul
-                      class="footer__copyright-links list-unstyled d-flex flex-wrap justify-content-end"
-                    >
-                      <li><a href="#">Terms & Conditions </a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Sitemap</a></li>
-                      <li><a href="#">Employee login</a></li>
-                    </ul>
-                  </nav>
-                  <p class="mb-0">
-                    &copy; 2020 Koira, All Rights Reserved. With Love by
-                    <a href="http://themeforest.net/user/7oroof">7oroof.com</a>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /. Banner layout 2 -->
+
+    <!-- ========================= 
+       Testimonials layout 1
+    =========================  -->
+    <section id="testimonialsLayout1" class="testimonials testimonials-layout1">
+      <div class="bg-img">
+        <img src="assets/images/backgrounds/1.jpg" alt="background" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="heading mb-50">
+              <h2 class="heading__title mb-0">What Our Clients Say!</h2>
+            </div>
+            <!-- /.heading -->
+          </div>
+          <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-12 col-sm-1 col-md-1 col-lg-1">
+            <img src="assets/images/testimonials/quote-icon.png" alt="quote-icon" class="mb-20" />
+          </div>
+          <!-- /.col-lg-1 -->
+          <div class="co-12 col-sm-11 col-md-11 col-lg-11">
+            <div class="owl-carousel thumbs-carousel carousel-arrows" data-slider-id="1" data-nav="true"
+              data-dots="false">
+              <!-- Testimonial #1 -->
+              <div class="testimonial-item">
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">
+                    They are the best of the best, and expertly trained team
+                    members who take the extra step and go the extra mile, all
+                    to fulfill our dedicated promise to deliver innovative and
+                    dynamic solutions to our customers to fit the needs of a
+                    rapidly changing global environment which was perfect for
+                    our needs!!.
                   </p>
                 </div>
-                <!-- /.Footer-copyright -->
+                <!-- /.testimonial-content -->
               </div>
-              <!-- /.col-lg-9 -->
+              <!-- /. testimonial-item -->
+              <!-- Testimonial #2 -->
+              <div class="testimonial-item">
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">
+                    They are the best of the best, and expertly trained team
+                    members who take the extra step and go the extra mile, all
+                    to fulfill our dedicated promise to deliver innovative and
+                    dynamic solutions to our customers to fit the needs of a
+                    rapidly changing global environment which was perfect for
+                    our needs!!.
+                  </p>
+                </div>
+                <!-- /.testimonial-content -->
+              </div>
+              <!-- /. testimonial-item -->
+              <!-- Testimonial #3 -->
+              <div class="testimonial-item">
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">
+                    They are the best of the best, and expertly trained team
+                    members who take the extra step and go the extra mile, all
+                    to fulfill our dedicated promise to deliver innovative and
+                    dynamic solutions to our customers to fit the needs of a
+                    rapidly changing global environment which was perfect for
+                    our needs!!.
+                  </p>
+                </div>
+                <!-- /.testimonial-content -->
+              </div>
+              <!-- /. testimonial-item -->
             </div>
-            <!-- /.row -->
+            <div class="owl-thumbs" data-slider-id="1">
+              <button class="owl-thumb-item">
+                <span class="testimonial__thumb">
+                  <img src="assets/images/testimonials/thumbs/1.jpg" alt="author thumb" />
+                </span><!-- /.testimonial-thumb -->
+                <span class="testimonial__meta">
+                  <span class="testimonial__meta-title">John Peter</span>
+                  <span class="testimonial__meta-desc">7oroof Inc</span> </span><!-- /.testimonial-meta -->
+              </button>
+              <button class="owl-thumb-item">
+                <span class="testimonial__thumb">
+                  <img src="assets/images/testimonials/thumbs/2.jpg" alt="author thumb" />
+                </span><!-- /.testimonial-thumb -->
+                <span class="testimonial__meta">
+                  <span class="testimonial__meta-title">Sami Wade</span>
+                  <span class="testimonial__meta-desc">Trustry</span> </span><!-- /.testimonial-meta -->
+              </button>
+              <button class="owl-thumb-item">
+                <span class="testimonial__thumb">
+                  <img src="assets/images/testimonials/thumbs/3.jpg" alt="author thumb" />
+                </span><!-- /.testimonial-thumb -->
+                <span class="testimonial__meta">
+                  <span class="testimonial__meta-title">Martin Hope</span>
+                  <span class="testimonial__meta-desc">Industech</span> </span><!-- /.testimonial-meta -->
+              </button>
+            </div>
+            <!-- /.owl-thumbs -->
           </div>
-          <!-- /.container -->
+          <!-- /.col-lg-12 -->
         </div>
-        <!-- /.Footer-bottom -->
-      </footer>
-      <!-- /.Footer -->
-      <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
-
-      <div class="module__search-container">
-        <i class="fa fa-times close-search"></i>
-        <form class="module__search-form">
-          <input
-            type="text"
-            class="search__input"
-            placeholder="Type Words Then Enter"
-          />
-          <button class="module__search-btn">
-            <i class="fa fa-search"></i>
-          </button>
-        </form>
+        <!-- /.row -->
       </div>
-      <!-- /.module-search-container -->
+      <!-- /.container -->
+    </section>
+    <!-- /.testimonials 1 -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 footer__widget footer__widget-about">
+              <h6 class="footer__widget-title">Quick Contact</h6>
+              <div class="footer__widget-content">
+                <p class="color-gray">
+                  If you have any questions or need help, feel free to contact
+                  with our team.
+                </p>
+                <p class="footer__contact-phone">
+                  <i class="icon-phone"></i>
+                  <a href="tel:5565454117">55 654 54117</a>
+                </p>
+                <p>
+                  2307 Beverley Rd Brooklyn, New York <br />11226 United
+                  States.
+                </p>
+                <ul class="social__icons">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                </ul>
+                <!-- /.social-icons -->
+              </div>
+            </div>
+            <!-- /.col-xl-3 -->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 offset-xl-1 footer__widget footer__widget-nav">
+              <h6 class="footer__widget-title">Company</h6>
+              <div class="footer__widget-content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet Our Team</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- /.footer-widget-content -->
+            </div>
+            <!-- /.col-xl-2 -->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 footer__widget footer__widget-nav">
+              <h6 class="footer__widget-title">Industries</h6>
+              <div class="footer__widget-content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Retail & Consumer</a></li>
+                    <li><a href="#">Sciences & Healthcare</a></li>
+                    <li><a href="#">Industrial & Chemical</a></li>
+                    <li><a href="#">Power Generation</a></li>
+                    <li><a href="#">Food & Beverage</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- /.footer-widget-content -->
+            </div>
+            <!-- /.col-xl-2 -->
+            <div class="col-sm-12 col-md-10 col-lg-6 col-xl-4 footer__widget footer__widget-newsletter">
+              <div class="footer__widget-content">
+                <p>
+                  Sign up for industry alerts, our latest news, thoughts, and
+                  insights from Koira.
+                </p>
+                <form class="widget__newsletter-form">
+                  <div class="form-group mb-0">
+                    <input type="text" class="form-control" placeholder="Your Email Address" />
+                    <button type="submit" class="btn btn__primary btn__hover2">
+                      <i class="icon-arrow-right"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- /.footer-widget-content -->
+              <p class="text-right fz-13 mt-20 mb-0">
+                You may withdraw your consent at any time!
+              </p>
+            </div>
+            <!-- /.col-xl-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.footer-top -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+              <img src="assets/images/logo/logo-footer.png" alt="logo" />
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-sm-12 col-md-9 col-lg-9 text-right">
+              <div class="footer__copyright">
+                <nav>
+                  <ul class="footer__copyright-links list-unstyled d-flex flex-wrap justify-content-end">
+                    <li><a href="#">Terms & Conditions </a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Employee login</a></li>
+                  </ul>
+                </nav>
+                <p class="mb-0">
+                  &copy; 2020 Koira, All Rights Reserved. With Love by
+                  <a href="http://themeforest.net/user/7oroof">7oroof.com</a>
+                </p>
+              </div>
+              <!-- /.Footer-copyright -->
+            </div>
+            <!-- /.col-lg-9 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.Footer-bottom -->
+    </footer>
+    <!-- /.Footer -->
+    <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
+
+    <div class="module__search-container">
+      <i class="fa fa-times close-search"></i>
+      <form class="module__search-form">
+        <input type="text" class="search__input" placeholder="Type Words Then Enter" />
+        <button class="module__search-btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
     </div>
-    <!-- /.wrapper -->
-    <script>
-      let currentSlide = 0;
-      function changeSlide(direction) {
-        let slides = document.querySelectorAll(".slides img");
-        slides[currentSlide].classList.remove("active");
-        currentSlide =
-          (currentSlide + direction + slides.length) % slides.length;
-        slides[currentSlide].classList.add("active");
-      }
-      setInterval(() => changeSlide(1), 3000);
-    </script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    <!-- /.module-search-container -->
+  </div>
+  <!-- /.wrapper -->
+  <script>
+    let currentSlide = 0;
+    function changeSlide(direction) {
+      let slides = document.querySelectorAll(".slides img");
+      slides[currentSlide].classList.remove("active");
+      currentSlide =
+        (currentSlide + direction + slides.length) % slides.length;
+      slides[currentSlide].classList.add("active");
+    }
+    setInterval(() => changeSlide(1), 3000);
+  </script>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
