@@ -107,6 +107,70 @@
       .btn__secondary i {
         margin-left: 8px;
       }
+      /* Spinner Styles */
+      #loadingIndicator {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #ff6600;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      @keyframes spin {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+      /* Modal Popup Styles (for desktop) */
+      #submissionModal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10000;
+      }
+      #submissionModal .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        max-width: 400px;
+        margin: 150px auto;
+        text-align: center;
+      }
+      #submissionModal .modal-content button {
+        background: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+      /* Success and Error Messages (fallback for mobile) */
+      .success-message,
+      .error-message {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .success-message {
+        color: green;
+      }
+      .error-message {
+        color: red;
+      }
     </style>
   </head>
 
@@ -291,8 +355,10 @@
         <form class="contact__form-panel" action="/send_mail" method="post">
           <div class="row">
             <div class="col-sm-12 contact__form-panel-header">
-              <h5>Every Big Idea Starts with a Small Step. Fill Out the Form to
-                Get Started!</h5>
+              <h5>
+                Every Big Idea Starts with a Small Step. Fill Out the Form to
+                Get Started!
+              </h5>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6">
               <div class="form-group">
@@ -351,7 +417,11 @@
               <div class="g-recaptcha" data-sitekey="{{ data_sitekey }}"></div>
             </div>
             <div class="col-sm-12 d-flex align-items-center">
-              <button type="submit" class="btn btn__secondary mr-30">
+              <button
+                type="submit"
+                class="btn btn__secondary mr-30"
+                id="submitButton"
+              >
                 <span>Submit Request</span><i class="icon-arrow-right"></i>
               </button>
               <div class="input-radio">
@@ -365,6 +435,15 @@
           </div>
         </form>
         <div id="formResponse"></div>
+      </div>
+
+      <div id="loadingIndicator"></div>
+
+      <div id="submissionModal">
+        <div class="modal-content">
+          <p id="modalMessage"></p>
+          <button id="modalOkButton">OK</button>
+        </div>
       </div>
 
       <footer id="footer" class="footer">
@@ -523,6 +602,10 @@
         $(".contact__form-panel").submit(function (e) {
           e.preventDefault();
 
+          $("#submitButton").prop("disabled", true);
+
+          $("#loadingIndicator").show();
+
           var form = $(this);
           var formData = form.serialize();
 
@@ -532,10 +615,19 @@
             data: formData,
             dataType: "json",
             success: function (response) {
+              $("#loadingIndicator").hide();
+              $("#submitButton").prop("disabled", false);
               if (response.success) {
-                $("#contactFormContainer").html(
-                  '<p class="success-message">Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.</p>'
-                );
+                var successMsg =
+                  "Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.";
+                if ($(window).width() >= 768) {
+                  $("#modalMessage").text(successMsg);
+                  $("#submissionModal").fadeIn();
+                } else {
+                  $("#contactFormContainer").html(
+                    '<p class="success-message">' + successMsg + "</p>"
+                  );
+                }
               } else if (response.error) {
                 $("#formResponse").html(
                   '<p class="error-message">An error occurred while submitting the form. Please try again.</p>'
@@ -543,11 +635,19 @@
               }
             },
             error: function () {
+              $("#loadingIndicator").hide();
+              $("#submitButton").prop("disabled", false);
               $("#formResponse").html(
                 '<p class="error-message">An error occurred while submitting the form. Please try again.</p>'
               );
             },
           });
+        });
+        $("#modalOkButton").click(function () {
+          $("#submissionModal").fadeOut();
+          $("#contactFormContainer").html(
+            '<p class="success-message">Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.</p>'
+          );
         });
       });
     </script>
