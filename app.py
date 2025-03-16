@@ -2,19 +2,19 @@ import os
 import ssl
 import smtplib
 import requests
-from flask import Flask, request, render_template, jsonify
-
+from flask import Flask, request, render_template, jsonify, abort
+from jinja2 import TemplateNotFound
 
 app = Flask(__name__, static_folder="assets", static_url_path="/assets", template_folder="templates")
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", data_sitekey=os.environ.get("data_sitekey"))
 
 @app.route('/<page>.html')
 def render_static_page(page):
     try:
-        return render_template(page + '.html')
+        return render_template(page + '.html', data_sitekey=os.environ.get("data_sitekey"))
     except TemplateNotFound:
         abort(404)
 
@@ -39,7 +39,7 @@ def send_mail():
         return jsonify({"error": "Recaptcha verification failed."}), 400
 
     sender_email = os.environ.get("mail_username")
-    receiver_email = "your_receiver@example.com"
+    receiver_email = os.environ.get("receiver_email")
     mail_host = os.environ.get("mail_host")
     mail_password = os.environ.get("mail_password")
     
