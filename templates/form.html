@@ -1,0 +1,250 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Contact Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        /* General Styling */
+        
+
+        /* Modal Styling */
+        .modal-content {
+            background-color: white;
+            width: 90%;
+            max-width: 500px;
+            margin: 5% auto;
+            padding: 25px;
+            border-radius: 10px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-top: 5px solid #ff7b00;
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7b00;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .close-modal:hover {
+            color: #d66300;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff7b00;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+            background-color: #f9f9f9;
+        }
+
+        .form-control:focus {
+            border-color: #999;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        select.form-control {
+            appearance: none;
+            background-color: #fff;
+        }
+
+        textarea.form-control {
+            resize: none;
+            height: 80px;
+        }
+
+        /* Submit Button */
+        .btn {
+            width: 80%;
+            padding: 10px;
+            font-size: 14px;
+            color: white;
+            background-color: #ff7b00;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #d66300;
+        }
+
+        /* Loading Indicator */
+        #loadingIndicator {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .loading-spinner {
+            width: 30px;
+            height: 30px;
+            border: 4px solid transparent;
+            border-top: 4px solid #ff7b00;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Submission Modal */
+        #submissionModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        #modalMessage {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        #modalOkButton {
+            width: 50%;
+            margin-top: 10px;
+            background-color: #ff7b00;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #modalOkButton:hover {
+            background-color: #d66300;
+        }
+
+        /* Background Overlay */
+        #modalOverlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 999;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeForm()">&times;</span>
+        <h2>Get In Touch</h2>
+        <form class="contact__form-panel" action="/send_mail" method="post">
+            <input type="text" class="form-control" placeholder="Name" name="name" required />
+            <input type="email" class="form-control" placeholder="Email" name="email" required />
+            <input type="text" class="form-control" placeholder="Phone" name="phone" required />
+            <select class="form-control" name="industry" required>
+                <option value="">Select Your Industry</option>
+                <option>Beverages</option>
+                <option>Heavy Industry</option>
+                <option>Oil & Gas</option>
+                <option>Others</option>
+            </select>
+            <textarea class="form-control" placeholder="Additional Details" name="message"></textarea>
+            <div class="g-recaptcha" data-sitekey="{{ data_sitekey }}"></div>
+            <button type="submit" class="btn" id="submitButton">Submit Request</button>
+            <div id="loadingIndicator"><div class="loading-spinner"></div></div>
+        </form>
+    </div>
+
+    <div id="modalOverlay"></div>
+    <div id="submissionModal">
+        <p id="modalMessage"></p>
+        <button id="modalOkButton">OK</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".contact__form-panel").submit(function (e) {
+                e.preventDefault();
+    
+                $("#submitButton").prop("disabled", true);
+                $("#loadingIndicator").show();
+    
+                var form = $(this);
+                var formData = form.serialize();
+    
+                $.ajax({
+                    url: form.attr("action"),
+                    type: form.attr("method"),
+                    data: formData,
+                    dataType: "json",
+                    success: function (response) {
+                        $("#loadingIndicator").hide();
+                        $("#submitButton").prop("disabled", false);
+    
+                        if (response.success) {
+                            $("#modalMessage").text("Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.");
+                            $("#submissionModal, #modalOverlay").fadeIn();
+                        }
+                    },
+                    error: function () {
+                        $("#loadingIndicator").hide();
+                        $("#submitButton").prop("disabled", false);
+                        alert("An error occurred. Please try again.");
+                    },
+                });
+            });
+    
+            $("#modalOkButton, #modalOverlay").click(function () {
+                $("#submissionModal, #modalOverlay").fadeOut();
+                $(".contact__form-panel")[0].reset(); // Reset form fields
+            });
+    
+            $(".close-modal").click(function () {
+                $(".modal-content, #modalOverlay").fadeOut(function () {
+                    $(".modal-content, #modalOverlay").remove(); // Completely remove elements
+                });
+            });
+            
+        });
+        
+    </script>
+    
+
+</body>
+
