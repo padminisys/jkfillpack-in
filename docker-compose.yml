@@ -1,9 +1,0 @@
-services:
-  appjk:
-    image: appjk
-    ports:
-      - "7600:80" 
-    env_file:
-      - .env
-    volumes:
-      - .:/app
