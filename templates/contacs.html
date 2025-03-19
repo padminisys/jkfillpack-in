@@ -21,8 +21,6 @@
     />
     <link rel="stylesheet" href="assets/css/libraries.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <style>
       .logo-dark,
       .logo-light {
@@ -118,7 +116,7 @@
         transform: translate(-50%, -50%);
         border: 8px solid #f3f3f3;
         border-top: 8px solid #ff6600;
-        border-radius: ;
+        border-radius: 50%;
         width: 60px;
         height: 60px;
         animation: spin 1s linear infinite;
@@ -173,44 +171,6 @@
       .error-message {
         color: red;
       }
-
-      /* Styling for the iframe container */
-      #formIframeContainer {
-        display: none;
-        position: fixed;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50%;
-        height: 80%;
-        background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        border-radius: 10px;
-      }
-
-      #formIframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-
-
-
-      .close-modal {
-        position: absolute;
-        right: 15px;
-        top: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        color: #ff7b00;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    .close-modal:hover {
-        color: #d66300;
-    }
     </style>
   </head>
 
@@ -279,11 +239,104 @@
                   </ul>
                 </li>
                 <li class="nav__item with-dropdown">
-                  <a href="#" class="dropdown-toggle nav__item-link"
-                    >Products</a
-                  >
+                  <a href="#" class="dropdown-toggle nav__item-link">Products</a>
+
                   <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                </li>
+                  <ul class="dropdown-menu wide-dropdown-menu">
+                      <li class="nav__item">
+                          <div class="row mx-0">
+                              <div class="col-sm-6 dropdown-menu-col">
+                                <h6>Conveyor System</h6>
+                                <ul class="nav flex-column">
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="conveyor-system-belt-conveyor.html">Belt Conveyor</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="conveyor-system-slat-conveyor.html">Slat Conveyor</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="conveyor-system-spiral_conveyor.html">Spiral Conveyor</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="conveyor-system-modular-conveyor.html">Modular Conveyor</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="conveyor-system-power-roller-conveyor.html">PowerRoller Conveyor</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="conveyor-system-gravity-roller-conveyor.html">Gravity Roller Conveyor</a>
+                                  </li><!-- /.nav-item -->
+                                </ul>
+                              </div><!-- /.col-sm-6 -->
+                              <div class="col-sm-6 dropdown-menu-col">
+                                <h6>Filling Machine</h6>
+                                <ul class="nav flex-column">
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="filling-machine-barrel-filler.html">Barrel Filler</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="filling-machine-pail-filler.html">Pail Filler</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="drum-filling.html">Drum Filler</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="filling-machine-linear-filler.html">Linear Filler</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="filling-machine-rotary-filler.html">Rotary Filler</a>
+                                  </li> <!-- /.nav-item -->
+                                </ul>
+                              </div><!-- /.col-sm-6 -->
+                              <div class="col-sm-6 dropdown-menu-col">
+                                <h6>Capping Machine</h6>
+                                <ul class="nav flex-column">
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="capping-machine-linear-capper.html">Linear Capper</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="capping-machine-rotary-capper.html">Rotary Capper</a>
+                                  </li> <!-- /.nav-item -->
+                                  <h6>Lid Pressing Machine</h6>
+                                  <ul class="nav flex-column">
+                                    <li class="nav__item">
+                                      <a class="nav__item-link" href="lid-pressing-machine-lid-pressing-machine.html">Lid Pressing Machine</a>
+                                    </li> <!-- /.nav-item -->
+                                  </ul>
+                                  <h6>Bopp Taping Machine</h6>
+                                  <ul class="nav flex-column">
+                                    <li class="nav__item">
+                                      <a class="nav__item-link" href="bopp-taping-machine-bopp-taping-machine.html">Bopp Taping Machine</a>
+                                    </li> <!-- /.nav-item -->
+                                  </ul>
+                                </ul>
+                              </div><!-- /.col-sm-6 -->
+                              <div class="col-sm-6 dropdown-menu-col">
+                                <h6>Elevator</h6>
+                                <ul class="nav flex-column">
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="elevator-cap-elevator.html">Cap Elevator</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="elevator-cap-feeding-elevator.html">Cap Feeding Elevator</a>
+                                  </li> <!-- /.nav-item -->
+                                  <li class="nav__item">
+                                    <a class="nav__item-link" href="elevator-cap-orienting-bowl.html">Cap Orienting Bowl</a>
+                                  </li> <!-- /.nav-item -->
+                                  <h6>Barrel Rinsing Machine</h6>
+                                  <ul class="nav flex-column">
+                                    <li class="nav__item">
+                                      <a class="nav__item-link" href="barrel-rinsing-machine-barrel-rinsing-machine.html">Barrel Rinsing Machine</a>
+                                    </li> <!-- /.nav-item -->
+                                  </ul>
+                                </ul>
+                              </div><!-- /.col-sm-6 -->
+                              
+        
+                            </div><!-- /.row -->
+                      </li><!-- /.nav-item -->
+                  </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
                 <li class="nav__item">
                   <a href="contacs.html" class="nav__item-link">Contacts</a>
                 </li>
@@ -299,14 +352,12 @@
                   ></a>
                 </li>
                 <li class="d-none d-lg-block">
-                  <a
-                    href="javascript:void(0);"
-                    class="btn btn__primary btn__bordered module__btn-request"
-                    id="openForm"
-                  >
-                    <span>Get A Quote</span><i class="icon-arrow-right"></i>
+                  <a href="contacs.html#contactFormContainer" class="btn btn__primary btn__bordered module__btn-request">
+                      <span>Get A Quote</span><i class="icon-arrow-right"></i>
                   </a>
-                </li>
+              </li>
+              
+                
                 <li class="d-none d-lg-block">
                   <div
                     class="module__btn module__btn-phone d-flex align-items-center"
@@ -389,6 +440,74 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+      </div>
+
+      <div id="contactFormContainer" class="container" style="margin-top: 40px">
+        <h2>Get In Touch</h2>
+        <form class="contact__form-panel" action="/send_mail" method="post">
+            <div class="row">
+                <div class="col-sm-12 contact__form-panel-header">
+                    <h5>Every Big Idea Starts with a Small Step. Fill Out the Form to Get Started!</h5>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" name="name" required />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" name="email" required />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone" name="phone" required />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <select class="form-control w-100" name="industry" required>
+                            <option value="">Select Your Industry</option>
+                            <option>Beverages</option>
+                            <option>Heavy Industry</option>
+                            <option>Oil & Gas</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Additional Details!" name="message"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="g-recaptcha" data-sitekey="{{ data_sitekey }}"></div>
+                </div>
+                <div class="col-sm-12 d-flex align-items-center">
+                    <button type="submit" class="btn btn__secondary mr-30">
+                        <span>Submit Request</span><i class="icon-arrow-right"></i>
+                    </button>
+                    <div class="input-radio">
+                        <label class="label-radio">
+                            I accept the privacy and terms.
+                            <input type="checkbox" name="terms" checked />
+                            <span class="radio-indicator"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="formResponse"></div>
+    </div>
+    
+
+      <div id="loadingIndicator"></div>
+
+      <div id="submissionModal">
+        <div class="modal-content">
+          <p id="modalMessage"></p>
+          <button id="modalOkButton">OK</button>
+        </div>
       </div>
 
       <footer id="footer" class="footer">
@@ -537,28 +656,75 @@
         </form>
       </div>
     </div>
-    <div id="formIframeContainer" >
-      <span class="close-modal" >&times;</span>
-      <iframe id="formIframe" src="form.html"></iframe>
-    </div>
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          if (window.location.hash === "#contactFormContainer") {
+              var formContainer = document.getElementById("contactFormContainer");
+              if (formContainer) {
+                  formContainer.scrollIntoView({ behavior: "smooth" });
+              }
+          }
+      });
+    </script>
+    
     <script>
       $(document).ready(function () {
-        $("#openForm").click(function () {
-          $("#formIframeContainer").fadeIn();
-        });
-        $(".close-modal").click(function () {
-          $("#formIframeContainer").fadeOut();
-            
-        
-      });
-      });
+        $(".contact__form-panel").submit(function (e) {
+          e.preventDefault();
 
-     
+          $("#submitButton").prop("disabled", true);
+
+          $("#loadingIndicator").show();
+
+          var form = $(this);
+          var formData = form.serialize();
+
+          $.ajax({
+            url: form.attr("action"),
+            type: form.attr("method"),
+            data: formData,
+            dataType: "json",
+            success: function (response) {
+              $("#loadingIndicator").hide();
+              $("#submitButton").prop("disabled", false);
+              if (response.success) {
+                var successMsg =
+                  "Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.";
+                if ($(window).width() >= 768) {
+                  $("#modalMessage").text(successMsg);
+                  $("#submissionModal").fadeIn();
+                } else {
+                  $("#contactFormContainer").html(
+                    '<p class="success-message">' + successMsg + "</p>"
+                  );
+                }
+              } else if (response.error) {
+                $("#formResponse").html(
+                  '<p class="error-message">An error occurred while submitting the form. Please try again.</p>'
+                );
+              }
+            },
+            error: function () {
+              $("#loadingIndicator").hide();
+              $("#submitButton").prop("disabled", false);
+              $("#formResponse").html(
+                '<p class="error-message">An error occurred while submitting the form. Please try again.</p>'
+              );
+            },
+          });
+        });
+        $("#modalOkButton").click(function () {
+          $("#submissionModal").fadeOut();
+          $("#contactFormContainer").html(
+            '<p class="success-message">Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.</p>'
+          );
+        });
+      });
     </script>
   </body>
 </html>
-

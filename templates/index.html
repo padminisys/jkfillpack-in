@@ -47,6 +47,74 @@
     .wide-dropdown-menu .dropdown-menu-col h6:not(:first-child) {
       margin-top: 7px;
     }
+
+
+
+    /*bottom contact form */
+    #loadingIndicator {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #ff6600;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      z-index: 9999;
+    }
+    @keyframes spin {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+    /* Modal Popup Styles (for desktop) */
+    #submissionModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 10000;
+    }
+    #submissionModal .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 400px;
+      margin: 150px auto;
+      text-align: center;
+    }
+    #submissionModal .modal-content button {
+      background: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    /* Success and Error Messages (fallback for mobile) */
+    .success-message,
+    .error-message {
+      text-align: center;
+      font-size: 1.4rem;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .success-message {
+      color: green;
+    }
+    .error-message {
+      color: red;
+    }
+
   </style>
 </head>
 
@@ -200,10 +268,12 @@
           <div class="navbar-modules">
             <ul class="list-unstyled d-flex align-items-center modules__btns-list">
               <li><a href="#" class="module__btn module__btn-search"><i class="fa fa-search"></i></a></li>
-              <li class="d-none d-lg-block"><a href="request-quote.html"
-                  class="btn btn__primary btn__bordered module__btn-request">
-                  <span>Get A Quote</span><i class="icon-arrow-right"></i>
-                </a></li>
+              <li class="d-none d-lg-block">
+                <a href="contacs.html#contactFormContainer" class="btn btn__primary btn__bordered module__btn-request">
+                    <span>Get A Quote</span><i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            
               <li class="d-none d-lg-block">
                 <div class="module__btn module__btn-phone d-flex align-items-center">
                   <i class="icon-phone"></i>
@@ -232,7 +302,7 @@
                   <h2 class="slide__title">Precision Engineered</h2>
                   <p class="slide__desc">Empowering your production with bespoke filling & packaging solutions.
                     Trusted by global industry giants for reliability and innovation.</p>
-                  <a href="#" class="btn btn__primary btn__hover2 mr-30">
+                  <a href="contacs.html#contactFormContainer" class="btn btn__primary btn__hover2 mr-30">
                     <i class="icon-arrow-right"></i><span>Request Quote</span>
                   </a>
                   <a href="#" class="btn btn__white btn__bordered">
@@ -252,7 +322,7 @@
                   <h2 class="slide__title">Innovate & Inspire </h2>
                   <p class="slide__desc">Turning challenges into cutting-edge machinery crafted for your success.
                     Our custom solutions drive operational excellence from concept to completion.</p>
-                  <a href="#" class="btn btn__white mr-30">
+                  <a href="contacs.html#contactFormContainer" class="btn btn__white mr-30">
                     <i class="icon-arrow-right"></i><span>Request Quote</span>
                   </a>
                   <a href="#" class="btn btn__primary btn__hover2">
@@ -272,7 +342,7 @@
                   <h2 class="slide__title">Crafting Global Success</h2>
                   <p class="slide__desc">Custom-engineered machines powering leaders like Coca-Cola, Pepsi, and more.
                     Partner with us for tailor-made solutions that elevate your production efficiency.</p>
-                  <a href="#" class="btn btn__white mr-30">Request Quote</a>
+                  <a href="contacs.html#contactFormContainer" class="btn btn__white mr-30">Request Quote</a>
                   <a href="#" class="btn btn__primary mr-40">Our Products</a>
                 </div><!-- /.slide-content -->
               </div><!-- /.col-xl-9 -->
@@ -318,7 +388,7 @@
                 </p>
                 <p>Partner with us to build on your past successes and shape a future defined by innovation and
                   excellence.</p>
-                <a href="#" class="btn btn__secondary mt-20">
+                <a href="contacs.html#contactFormContainer" class="btn btn__secondary mt-20">
                   <i class="icon-arrow-right"></i><span>Have A Project!</span>
                 </a>
               </div><!-- /.col-lg-6 -->
@@ -473,7 +543,7 @@
               <a href="#">Explore All Services</a>
             </p>
           </div>/.col-lg-12 -->
-          <a href="#" class="btn btn__secondary mt-20">
+          <a href="contacs.html#contactFormContainer" class="btn btn__secondary mt-20">
             <i class="icon-arrow-right"></i><span>Have A Project?</span>
           </a>
         </div>
@@ -503,7 +573,7 @@
                 <li>Rigorous Quality Assurance</li>
                 <li>Trusted Global Partnership</li>
               </ul>
-              <a href="#" class="btn btn__white btn__bordered btn__lg">Schedule An Appointment</a>
+              <a href="contacs.html#contactFormContainer" class="btn btn__white btn__bordered btn__lg">Schedule An Appointment</a>
             </div>
           </div><!-- /.col-xl-6 -->
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 bg-parallax" style="min-height: 700px;">
@@ -763,71 +833,74 @@
     <!-- ==========================
         contact layout 2
     =========================== -->
-    <section id="contactLayout2" class="contact contact-layout2 pt-0   bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="contact__panel">
-              <div class="contact__panel-banner">
-                <img src="assets/images/banners/2.jpg" alt="banner img">
-                <div class="cta__banner">
-                  <p class="cta__desc"><strong>We will get back to you within 24 hours, or you can call us everyday,
-                      09:00 AM - 12:00 PM</strong></p>
-                  <div class="contact__number d-flex align-items-center">
-                    <i class="icon-phone"></i>
-                    <a href="tel:9167799522">9167799522</a>
-                  </div>
-                </div>
+    <div id="contactFormContainer" class="container" style="margin-top: 40px">
+      <h2>Get In Touch</h2>
+      <form class="contact__form-panel" action="/send_mail" method="post">
+          <div class="row">
+              <div class="col-sm-12 contact__form-panel-header">
+                  <h5>Every Big Idea Starts with a Small Step. Fill Out the Form to Get Started!</h5>
               </div>
-              <form class="contact__form-panel">
-                <div class="row">
-                  <div class="col-sm-12 contact__form-panel-header">
-                    <h4>Get In Touch</h4>
-                    <p>Complete control over products allows us to ensure our customers receive the best quality
-                      prices
-                      and service.</p>
+              <div class="col-sm-6">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" name="name" required />
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group"><input type="text" class="form-control" placeholder="Name"></div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group"><input type="text" class="form-control" placeholder="Phone"></div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <select class="form-control form-group w-100">
-                        <option>Select Your Industry</option>
-                        <option>Industry 1</option>
-                        <option>Industry 2</option>
+              </div>
+              <div class="col-sm-6">
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" name="email" required />
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Phone" name="phone" required />
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="form-group">
+                      <select class="form-control w-100" name="industry" required>
+                          <option value="">Select Your Industry</option>
+                          <option>Beverages</option>
+                          <option>Heavy Industry</option>
+                          <option>Oil & Gas</option>
+                          <option>Others</option>
                       </select>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-group">
-                      <textarea class="form-control" placeholder="Additional Details!"></textarea>
-                    </div>
-                  </div><!-- /.col-lg-12 -->
-                  <div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-center">
-                    <button type="submit" class="btn btn__secondary mr-30">
+                  </div>
+              </div>
+              <div class="col-sm-12">
+                  <div class="form-group">
+                      <textarea class="form-control" placeholder="Additional Details!" name="message"></textarea>
+                  </div>
+              </div>
+              <div class="col-sm-12">
+                  <div class="g-recaptcha" data-sitekey="{{ data_sitekey }}"></div>
+              </div>
+              <div class="col-sm-12 d-flex align-items-center">
+                  <button type="submit" class="btn btn__secondary mr-30">
                       <span>Submit Request</span><i class="icon-arrow-right"></i>
-                    </button>
-                    <div class="input-radio">
-                      <label class="label-radio">I accept the privacy and terms.
-                        <input type="checkbox" name="radioGroup2" checked>
-                        <span class="radio-indicator"></span>
+                  </button>
+                  <div class="input-radio">
+                      <label class="label-radio">
+                          I accept the privacy and terms.
+                          <input type="checkbox" name="terms" checked />
+                          <span class="radio-indicator"></span>
                       </label>
-                    </div>
-                  </div><!-- /.col-lg-12 -->
-                </div><!-- /.row -->
-              </form>
-            </div><!-- /.contact__panel -->
-          </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.contact layout 1 -->
+                  </div>
+              </div>
+          </div>
+      </form>
+      <div id="formResponse"></div>
+  </div>
+  
+
+    <div id="loadingIndicator"></div>
+
+    <div id="submissionModal">
+      <div class="modal-content">
+        <p id="modalMessage"></p>
+        <button id="modalOkButton">OK</button>
+      </div>
+    </div>
+
 
 
     <!-- ========================= 
@@ -935,6 +1008,61 @@
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    $(document).ready(function () {
+      $(".contact__form-panel").submit(function (e) {
+        e.preventDefault();
+
+        $("#submitButton").prop("disabled", true);
+
+        $("#loadingIndicator").show();
+
+        var form = $(this);
+        var formData = form.serialize();
+
+        $.ajax({
+          url: form.attr("action"),
+          type: form.attr("method"),
+          data: formData,
+          dataType: "json",
+          success: function (response) {
+            $("#loadingIndicator").hide();
+            $("#submitButton").prop("disabled", false);
+            if (response.success) {
+              var successMsg =
+                "Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.";
+              if ($(window).width() >= 768) {
+                $("#modalMessage").text(successMsg);
+                $("#submissionModal").fadeIn();
+              } else {
+                $("#contactFormContainer").html(
+                  '<p class="success-message">' + successMsg + "</p>"
+                );
+              }
+            } else if (response.error) {
+              $("#formResponse").html(
+                '<p class="error-message">An error occurred while submitting the form. Please try again.</p>'
+              );
+            }
+          },
+          error: function () {
+            $("#loadingIndicator").hide();
+            $("#submitButton").prop("disabled", false);
+            $("#formResponse").html(
+              '<p class="error-message">An error occurred while submitting the form. Please try again.</p>'
+            );
+          },
+        });
+      });
+      $("#modalOkButton").click(function () {
+        $("#submissionModal").fadeOut();
+        $("#contactFormContainer").html(
+          '<p class="success-message">Thank you for your interest in our products! Our representative will contact you on the provided phone number within the next 4 hours.</p>'
+        );
+      });
+    });
+  </script>
 </body>
 
 </html>
